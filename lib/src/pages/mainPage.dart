@@ -6,10 +6,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class MainPage extends StatelessWidget{
+class MainPage extends StatefulWidget{
+
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  bool mqttInitialized = false;
   Widget build(BuildContext context){
     MQTTModel mqttModel = context.watch<MQTTModel>();
-    MQTTManager().InitMQTTManager(mqttModel);
+    if(mqttInitialized ==false) {
+      MQTTManager().InitMQTTManager(mqttModel);
+      mqttInitialized = true;
+    }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(

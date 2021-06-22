@@ -10,7 +10,6 @@ final client = MqttServerClient('localhost', '');
 class MQTTManager {
   void InitMQTTManager(MQTTModel model) async {
     client.logging(on: false);
-
     client.onDisconnected = onDisconnected;
     client.onConnected = onConnected;
     client.onSubscribed = onSubscribed;
@@ -71,27 +70,27 @@ class MQTTManager {
 
   /// The subscribed callback
   void onSubscribed(String topic) {
-    print('EXAMPLE::Subscription confirmed for topic $topic');
+    //print('EXAMPLE::Subscription confirmed for topic $topic');
   }
 
   /// The unsolicited disconnect callback
   void onDisconnected() {
-    print('EXAMPLE::OnDisconnected client callback - Client disconnection');
+    //print('EXAMPLE::OnDisconnected client callback - Client disconnection');
     if (client.connectionStatus!.disconnectionOrigin ==
         MqttDisconnectionOrigin.solicited) {
-      print('EXAMPLE::OnDisconnected callback is solicited, this is correct');
+      //print('EXAMPLE::OnDisconnected callback is solicited, this is correct');
     }
     exit(-1);
   }
 
   /// The successful connect callback
   void onConnected() {
-    print(
-        'EXAMPLE::OnConnected client callback - Client connection was sucessful');
+    //print(
+       // 'EXAMPLE::OnConnected client callback - Client connection was sucessful');
   }
 
   /// Pong callback
   void pong() {
-    print('EXAMPLE::Ping response client callback invoked');
+    //print('EXAMPLE::Ping response client callback invoked');
   }
 }

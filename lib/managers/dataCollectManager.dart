@@ -1,9 +1,16 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:anomaly_detection_ui/models/omsDataModel.dart';
 import 'package:csv/csv.dart';
-class dataCollectManager{
+class DataCollectManager{
   List<OmsDataModel> datas = [];
-  void turnToCSV(){
-    List<List<dynamic>> dd = [["dd : 3"],["dd : 3"]];
+  List<List<dynamic>> csvBase= [["da","da","da"],["sa","sa","sa"],["ea","ea","ea"]];
+  Future<void> turnToCSV() async {
+    /*String csv = const ListToCsvConverter().convert(csvBase);
+    File file = await new File('lib/ss.csv').create(recursive: true);
+    file.writeAsString(csv);
+    print(csv);*/
   }
   void startStoreData( OmsDataModel data,int numberOfDatasNeeded){
     datas.add(data);
