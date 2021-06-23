@@ -1,19 +1,24 @@
 import 'dart:collection';
 
-import 'package:anomaly_detection_ui/models/omsDataModel.dart';
+import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:flutter/cupertino.dart';
 class MQTTModel with ChangeNotifier{
-  Queue<OmsDataModel> datas =  Queue();
-
-  void addToDatas(OmsDataModel data){
-
-    if(datas.length < 100){
-      datas.add(data);
+  HashMap <String, Queue<OhtDataModel>> ohtDatas = new HashMap();
+  void addOht(String ohtId){
+    ohtDatas[ohtId] = Queue();
+    print("s");
+  }
+  void addToDatas(String ohtId, OhtDataModel data) {
+    int? length = ohtDatas[ohtId]?.length;
+    if (length != null) {
+      if (length < 100) {
+        ohtDatas[ohtId]?.add(data);
+      }
+      else {
+        ohtDatas[ohtId]?.removeFirst();
+        ohtDatas[ohtId]?.add(data);
+      }
+      notifyListeners();
     }
-    else{
-      datas.removeFirst();
-      datas.add(data);
-    }
-    notifyListeners();
   }
 }

@@ -1,5 +1,5 @@
 
-class OmsDataModel{
+class OhtDataModel{
 
   final double accx_rms;
   final double accy_rms;
@@ -13,7 +13,7 @@ class OmsDataModel{
   final double fork_lift_speed;
   final double fork_lift_torque;
 
-  OmsDataModel(
+  OhtDataModel(
       this.accx_rms,
       this.accy_rms,
       this.accz_rms,
@@ -26,7 +26,7 @@ class OmsDataModel{
       this.oht_event_label,
       this.yaw,);
 
-  OmsDataModel.fromJson(Map<String, dynamic> json)
+  OhtDataModel.fromJson(Map<String, dynamic> json)
       : accx_rms = json['accx_rms'],
         accy_rms = json['accy_rms'],
         accz_rms = json['accz_rms'],

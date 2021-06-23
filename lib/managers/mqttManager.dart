@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
-import 'package:anomaly_detection_ui/models/omsDataModel.dart';
+import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:mqtt_client/mqtt_client.dart';
 import 'package:mqtt_client/mqtt_server_client.dart';
 
 
 final client = MqttServerClient('localhost', '');
 class MQTTManager {
-  void InitMQTTManager(MQTTModel model) async {
+  void InitMQTTManager(MQTTModel model, String ohtId) async {
     client.logging(on: false);
     client.onDisconnected = onDisconnected;
     client.onConnected = onConnected;
@@ -48,7 +48,7 @@ class MQTTManager {
       exit(-1);
     }
 
-    const topic = 'oms/vehicle/SS-FA-EM-00-00-01/anomalyDetection'; // Not a wildcard topic
+    var topic = 'oms/vehicle/SS-FA-EM-00-00-'+ohtId+'/anomalyDetection'; // Not a wildcard topic
     client.subscribe(topic, MqttQos.atMostOnce);
 
     client.updates!.listen((List<MqttReceivedMessage<MqttMessage?>>? c) {
@@ -56,9 +56,9 @@ class MQTTManager {
       final pt =
       MqttPublishPayload.bytesToStringAsString(recMess.payload.message!);
 
-      OmsDataModel mqtt = OmsDataModel.fromJson(jsonDecode(pt));
-      model.addToDatas(mqtt);
-      //print(mqtt.accx_rms);
+      OhtDataModel mqtt = OhtDataModel.fromJson(jsonDecode(pt));
+      model.addToDatas(ohtId,mqtt);
+      print(mqtt.accx_rms);
     });
 
     /*client.published!.listen((MqttPublishMessage message) {
@@ -71,6 +71,7 @@ class MQTTManager {
   /// The subscribed callback
   void onSubscribed(String topic) {
     //print('EXAMPLE::Subscription confirmed for topic $topic');
+
   }
 
   /// The unsolicited disconnect callback
