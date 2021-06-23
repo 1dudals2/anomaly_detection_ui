@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:mqtt_client/mqtt_client.dart';
@@ -8,7 +9,7 @@ import 'package:mqtt_client/mqtt_server_client.dart';
 
 final client = MqttServerClient('localhost', '');
 class MQTTManager {
-  void InitMQTTManager(MQTTModel model, String ohtId) async {
+  void InitMQTTManager(MQTTModel model, String ohtId,DataCollectManager dataManager) async {
     client.logging(on: false);
     client.onDisconnected = onDisconnected;
     client.onConnected = onConnected;
@@ -58,6 +59,7 @@ class MQTTManager {
 
       OhtDataModel mqtt = OhtDataModel.fromJson(jsonDecode(pt));
       model.addToDatas(ohtId,mqtt);
+      dataManager.startStoreData(mqtt, 100);
       print(mqtt.accx_rms);
     });
 

@@ -1,5 +1,6 @@
 import 'package:anomaly_detection_ui/commonly_used_widget/MapPaintingWidget.dart';
 import 'package:anomaly_detection_ui/constants/WindowsButtonColor.dart';
+import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
@@ -18,7 +19,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context){
     MQTTModel mqttModel = context.watch<MQTTModel>();
     if(mqttInitialized ==false) {
-      MQTTManager().InitMQTTManager(mqttModel, "01");
+      MQTTManager().InitMQTTManager(mqttModel, "01", DataCollectManager());
       mqttModel.addOht("01");
       mqttInitialized = true;
     }
@@ -60,7 +61,7 @@ class _MainPageState extends State<MainPage> {
                                 width: 30,
                                 child: Text(mqttModel.ohtDatas["01"]!
                                     .elementAt(index)
-                                    .accx_rms
+                                    .anomal_timestamp
                                     .toString()),
                               );
 
