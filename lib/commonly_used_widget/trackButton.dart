@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TrackButton extends StatelessWidget {
-  const TrackButton({Key? key}) : super(key: key);
-
+  const TrackButton({Key? key, required this.changeModeFunction, required this.currentMode}) : super(key: key);
+  final ValueSetter<int> changeModeFunction;
+  final int currentMode;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-
       style: ButtonStyle(
         elevation: MaterialStateProperty.all<double>(0),
         fixedSize: MaterialStateProperty.all<Size>(
@@ -17,9 +17,11 @@ class TrackButton extends StatelessWidget {
         ),
         backgroundColor: MaterialStateProperty.all<Color>(
             Colors.white
-        ),
-        foregroundColor: MaterialStateProperty.all<Color>(
+        ) ,
+        foregroundColor: currentMode == 0 ? MaterialStateProperty.all<Color>(
           Color(0xFF7283FC),
+        ) : MaterialStateProperty.all<Color>(
+          Colors.grey,
         ),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
@@ -28,7 +30,7 @@ class TrackButton extends StatelessWidget {
         )
       ),
       onPressed: () =>{
-
+        changeModeFunction(0)
       },
       child: Text(
         "Track"

@@ -17,28 +17,27 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
+    double height = MediaQuery.of(context).size.height;
+    containerWidth = width;
+    containerHeight = height * 0.6;
     return Center(
-      child: Container(
-        width: 405,
-        height: 405,
-        color: Colors.black,
-        child: FittedBox(
-          child: Container(
-              color: Colors.white,
-              width: containerWidth ,
-              height: containerHeight,
-              child: InteractiveViewer(
-                maxScale: 10000,
-                minScale: 0.2,
-                panEnabled: true,
-                child: Transform.scale(
-                  scale: scaleFactorForWidget,
-                  child: CustomPaint(
-                    painter: OpenPainter(),
-                  ),
+      child: FittedBox(
+        child: Container(
+            color: Colors.amber,
+            width: containerWidth,
+            height: containerHeight,
+            child: InteractiveViewer(
+              maxScale: 10000,
+              minScale: 0.2,
+              panEnabled: true,
+              child: Transform.scale(
+                scale: scaleFactorForWidget,
+                child: CustomPaint(
+                  painter: OpenPainter(),
                 ),
-              )),
-        ),
+              ),
+            )),
       ),
     );
   }
@@ -58,31 +57,6 @@ class OpenPainter extends CustomPainter{
         paint,
         3000,
     );
-
-/*    var startPoint = Offset(100,100);
-    var endPoint = Offset(300,100);
-    var controlPoint1 = Offset(endPoint.dx, startPoint.dy );
-    var controlPoint2 = Offset(endPoint.dx, startPoint.dy );
-
-    var path = Path();
-    path.moveTo(startPoint.dx, startPoint.dy);
-    path.cubicTo(controlPoint1.dx, controlPoint1.dy,
-        controlPoint2.dx, controlPoint2.dy,
-        endPoint.dx, endPoint.dy);
-
-    canvas.drawPath(path, paint);
-
-
-    var startPoint1 = Offset(300,100);
-    var endPoint1 = Offset(400,150);
-    var controlPoint1_1 = Offset(endPoint1.dx, startPoint1.dy );
-    var controlPoint1_2 = Offset(endPoint1.dx, startPoint1.dy );
-
-    var path1 = Path();
-    path1.moveTo(startPoint1.dx, startPoint1.dy);
-    path1.cubicTo(controlPoint1_1.dx, controlPoint1_1.dy,
-        controlPoint1_2.dx, controlPoint1_2.dy,
-        endPoint1.dx, endPoint1.dy);*/
 
 
   }
