@@ -1,5 +1,6 @@
 
 class OhtDataModel{
+  final int event_label;
   final int num_of_vehicles;
   final String anomal_timestamp;
   final double accx_rms;
@@ -10,7 +11,6 @@ class OhtDataModel{
   final double drive_right_speed;
   final double drive_left_torque;
   final double drive_right_torque;
-  final String oht_event_label;
   final double fork_lift_speed;
   final double fork_lift_torque;
 
@@ -26,11 +26,12 @@ class OhtDataModel{
       this.drive_right_torque,
       this.fork_lift_speed,
       this.fork_lift_torque,
-      this.oht_event_label,
+      this.event_label ,
       this.yaw,);
 
   OhtDataModel.fromJson(Map<String, dynamic> json)
-      : num_of_vehicles = json['num_of_vehicles'],
+      : event_label  = json['event_label'],
+        num_of_vehicles = json['num_of_vehicles'],
         anomal_timestamp = json['anomal_timestamp'],
         accx_rms = json['accx_rms'],
         accy_rms = json['accy_rms'],
@@ -41,7 +42,6 @@ class OhtDataModel{
         drive_right_torque = json['drive_right_torque'],
         fork_lift_torque = json['fork_lift_torque'],
         fork_lift_speed = json['fork_lift_speed'],
-        oht_event_label = json['oht_event_label'],
         yaw = json['yaw'];
 
   Map<String, dynamic> toJson() =>{
@@ -56,7 +56,7 @@ class OhtDataModel{
     'drive_right_torque' : drive_right_torque,
     'fork_lift_torque' : fork_lift_torque,
     'fork_lift_speed' : fork_lift_speed,
-    'oht_event_label' : oht_event_label,
+    'event_label ' : event_label ,
     'yaw' : yaw,
   };
 }

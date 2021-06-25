@@ -59,8 +59,7 @@ class MQTTManager {
 
       OhtDataModel mqtt = OhtDataModel.fromJson(jsonDecode(pt));
       model.addToDatas(ohtId,mqtt);
-      dataManager.startStoreData(mqtt, 100);
-      print(mqtt.accx_rms);
+      //dataManager.startStoreData(mqtt, 100);
     });
 
     /*client.published!.listen((MqttPublishMessage message) {

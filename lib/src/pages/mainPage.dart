@@ -1,4 +1,6 @@
 import 'package:anomaly_detection_ui/commonly_used_widget/MapPaintingWidget.dart';
+import 'package:anomaly_detection_ui/commonly_used_widget/trackButton.dart';
+import 'package:anomaly_detection_ui/commonly_used_widget/vehicleButton.dart';
 import 'package:anomaly_detection_ui/constants/WindowsButtonColor.dart';
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
@@ -32,9 +34,12 @@ class _MainPageState extends State<MainPage> {
               WindowTitleBarBox(
                 child: Row(
                   children: [
+                    TrackButton(),
+                    VehicleButton(),
                     Expanded(child: MoveWindow()),
                     Row(
                       children: [
+
                         MinimizeWindowButton(
                           colors: buttonColors,
                         ),
@@ -50,24 +55,7 @@ class _MainPageState extends State<MainPage> {
                   ],
                 ),
               ),
-              //MapPaintingWidget()
-              mqttModel.ohtDatas["01"] != null ? Expanded(
-                child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: mqttModel. ohtDatas["01"]?.length,
-                    itemBuilder: (BuildContext context, int index){
-                              return Container(
-                                height: 30,
-                                width: 30,
-                                child: Text(mqttModel.ohtDatas["01"]!
-                                    .elementAt(index)
-                                    .anomal_timestamp
-                                    .toString()),
-                              );
 
-                          }
-                ),
-              ) : Container(),
             ],
           ),
         ),

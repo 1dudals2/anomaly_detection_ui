@@ -6,7 +6,6 @@ class MQTTModel with ChangeNotifier{
   HashMap <String, Queue<OhtDataModel>> ohtDatas = new HashMap();
   void addOht(String ohtId){
     ohtDatas[ohtId] = Queue();
-    print("s");
   }
   void addToDatas(String ohtId, OhtDataModel data) {
     int? length = ohtDatas[ohtId]?.length;
