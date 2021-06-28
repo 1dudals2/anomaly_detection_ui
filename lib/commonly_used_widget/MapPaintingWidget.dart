@@ -1,4 +1,5 @@
 import 'package:anomaly_detection_ui/managers/drawingManager.dart';
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,9 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
-    double height = MediaQuery.of(context).size.height;
+    double height = MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight;
     containerWidth = width;
-    containerHeight = height * 0.6;
+    containerHeight = height * 0.5;
     return Center(
       child: FittedBox(
         child: Container(

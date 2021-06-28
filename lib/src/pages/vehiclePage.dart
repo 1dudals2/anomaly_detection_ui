@@ -1,3 +1,6 @@
+import 'package:anomaly_detection_ui/commonly_used_widget/VehicleList.dart';
+import 'package:anomaly_detection_ui/src/pages/vehicleChartPage.dart';
+import 'package:anomaly_detection_ui/src/pages/vehicleGraphPage.dart';
 import 'package:flutter/cupertino.dart';
 
 class VehiclePage extends StatefulWidget {
@@ -8,8 +11,23 @@ class VehiclePage extends StatefulWidget {
 }
 
 class _VehiclePageState extends State<VehiclePage> {
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
+    return Expanded(
+      child: Row(
+        children: [
+          VehicleList(),
+          Column(
+            children: [
+              VehicleChartPage(),
+              VehicleGraphPage(),
+            ],
+          )
+
+        ],
+      ),
+    );
   }
 }

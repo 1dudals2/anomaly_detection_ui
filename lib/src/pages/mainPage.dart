@@ -76,7 +76,6 @@ class _MainPageState extends State<MainPage> {
               ),
               mode == 0 ?TrackPage()
               : VehiclePage(),
-
             ],
           ),
         ),

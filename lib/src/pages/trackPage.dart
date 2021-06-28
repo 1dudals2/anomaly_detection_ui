@@ -19,7 +19,6 @@ class _TrackPageState extends State<TrackPage> {
           MapPaintingWidget(),
           Expanded(
             child: Row(
-
               children: [
                   AnomalHistoryTable(),
                   TrackPlotWidget()

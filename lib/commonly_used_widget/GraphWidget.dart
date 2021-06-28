@@ -54,7 +54,6 @@ class _GraphWidgetState extends State<GraphWidget> {
                 // Enable data label
                 dataLabelSettings: DataLabelSettings(isVisible: true)),
           ]),
-
       //color: Colors.black,
     );
   }
