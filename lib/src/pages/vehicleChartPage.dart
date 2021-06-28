@@ -37,6 +37,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                     width: width*0.125,
                     color: Colors.blueAccent,
                     child: Text('이상 데이터 History'),
+
                   ),
                   Container(
                     // height: height-50,
