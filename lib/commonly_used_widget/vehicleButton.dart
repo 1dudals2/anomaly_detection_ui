@@ -13,8 +13,10 @@ class VehicleButton extends StatelessWidget {
           fixedSize: MaterialStateProperty.all<Size>(
               Size(
                   100,50
+
               )
           ),
+
           backgroundColor: MaterialStateProperty.all<Color>(
               Colors.white
           ),

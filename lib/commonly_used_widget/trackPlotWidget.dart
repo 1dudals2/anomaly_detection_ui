@@ -10,6 +10,7 @@ class TrackPlotWidget extends StatefulWidget {
 }
 
 class _TrackPlotWidgetState extends State<TrackPlotWidget> {
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;

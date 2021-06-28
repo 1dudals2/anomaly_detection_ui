@@ -1,4 +1,5 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class VehicleChartPage extends StatefulWidget {
@@ -18,6 +19,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
       height: height,
       //color: Colors.red,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             width: width*0.5,

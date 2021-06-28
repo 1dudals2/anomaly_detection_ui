@@ -23,6 +23,7 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
     containerWidth = width;
     containerHeight = height * 0.5;
     return Center(
+
       child: FittedBox(
         child: Container(
             color: Colors.amber,

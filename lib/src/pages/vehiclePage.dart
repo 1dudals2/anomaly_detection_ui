@@ -24,7 +24,6 @@ class _VehiclePageState extends State<VehiclePage> {
             children: [
               VehicleChartPage(),
               VehicleGraphPage(),
-
             ],
           )
 

@@ -9,5 +9,6 @@ final buttonColors = WindowButtonColors(
 final closeButtonColors = WindowButtonColors(
     mouseOver: Color(0xFFD32F2F),
     mouseDown: Color(0xFFB71C1C),
+
     iconNormal: Color(0xFF7283FC),
     iconMouseOver: Colors.white);

@@ -20,6 +20,7 @@ class _GraphWidgetState extends State<GraphWidget> {
     MQTTModel mqttModel = context.watch<MQTTModel>();
     return Container(
       child: SfCartesianChart(
+
           primaryYAxis: NumericAxis(
             labelFormat: '{value}',
             minimum: 0,

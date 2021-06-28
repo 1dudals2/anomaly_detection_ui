@@ -16,6 +16,7 @@ class MQTTModel with ChangeNotifier{
       else {
         ohtDatas[ohtId]?.removeFirst();
         ohtDatas[ohtId]?.add(data);
+
       }
       notifyListeners();
     }

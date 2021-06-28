@@ -148,6 +148,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                 child: Text('adf')
                             ),
                             Container(
+
                                 width: width*0.16,
                                 decoration: BoxDecoration(
                                     border: Border(

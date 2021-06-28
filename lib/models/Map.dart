@@ -15,6 +15,7 @@ class Segment{
   Point endPoint;
   int speed;
   int length;
+
   double travelTime;
   List<SegPart> segParts;
 

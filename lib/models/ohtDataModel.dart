@@ -58,5 +58,6 @@ class OhtDataModel{
     'fork_lift_speed' : fork_lift_speed,
     'event_label ' : event_label ,
     'yaw' : yaw,
+
   };
 }

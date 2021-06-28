@@ -8,6 +8,7 @@ class MQTTProvider extends StatelessWidget{
 
     return ChangeNotifierProvider.value(
       value: new MQTTModel(),
+
       child: MainPage()
     );
   }

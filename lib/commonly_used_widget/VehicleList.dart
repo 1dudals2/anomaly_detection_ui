@@ -32,6 +32,7 @@ class _VehicleListState extends State<VehicleList> {
     return  Container(
       width: 300,
       decoration: BoxDecoration(
+
           //color: Colors.lightBlue,
           border: Border.all(color: Colors.blueAccent)
       ),

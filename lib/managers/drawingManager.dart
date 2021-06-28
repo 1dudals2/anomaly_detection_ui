@@ -12,6 +12,7 @@ class DrawingManager{
 
 
   Path getQ1Path(Offset startPoint){
+
     Path path = new Path();
     path.addArc(Rect.fromLTWH(
         startPoint.dx - 100,

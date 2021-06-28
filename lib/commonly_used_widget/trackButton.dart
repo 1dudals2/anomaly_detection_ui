@@ -18,11 +18,13 @@ class TrackButton extends StatelessWidget {
         backgroundColor: MaterialStateProperty.all<Color>(
             Colors.white
         ) ,
+
         foregroundColor: currentMode == 0 ? MaterialStateProperty.all<Color>(
           Color(0xFF7283FC),
         ) : MaterialStateProperty.all<Color>(
           Colors.grey,
         ),
+
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
                 borderRadius: BorderRadius.zero,

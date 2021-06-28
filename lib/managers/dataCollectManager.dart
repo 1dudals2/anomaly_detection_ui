@@ -35,6 +35,7 @@ class DataCollectManager{
       ]);
       print(csvBase.length);
     }
+
     else if (dataWrittenToFile <= numberOfDatasNeeded){
       Isolate.spawn(writeToFile, csvBase);
       dataWrittenToFile += 10;
