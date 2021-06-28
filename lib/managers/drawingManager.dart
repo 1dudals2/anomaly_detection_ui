@@ -24,13 +24,13 @@ class DrawingManager{
 
   Path getQ2Path(Offset startPoint, double circleSize){
     Path path = new Path();
-    path.addArc(Rect.fromLTWH(startPoint.dx , startPoint.dy - 50, circleSize, circleSize),degToRad(180),degToRad(-90));
+    path.addArc(Rect.fromLTWH(startPoint.dx , startPoint.dy - circleSize / 2, circleSize, circleSize),degToRad(180),degToRad(-90));
     return path;
   }
 
   Path getQ3Path(Offset startPoint, double circleSize){
     Path path = new Path();
-    path.addArc(Rect.fromLTWH(startPoint.dx - circleSize / 2, startPoint.dy, circleSize, circleSize),degToRad(180),degToRad(90));
+    path.addArc(Rect.fromLTWH(startPoint.dx - circleSize / 2, startPoint.dy , circleSize, circleSize),degToRad(180),degToRad(90));
     return path;
   }
 
@@ -128,5 +128,19 @@ class DrawingManager{
     canvas.drawPath(getQ1Path( Offset(endPoint.dx  , endPoint.dy + length )), paint);
     drawStraightLine( endPoint,Offset(endPoint.dx , endPoint.dy+ length), paint);
   }
-
+  void drawSCurve(Offset startPoint, Offset endPoint, Paint paint){
+    Offset midPoint = Offset(
+      Math.min(startPoint.dx, endPoint.dx)+ ((startPoint.dx - endPoint.dx).abs()/2),
+      Math.min(startPoint.dy, endPoint.dy) + ((startPoint.dy - endPoint.dy).abs()/2)
+    );
+    drawCurveCounter(
+        startPoint,
+        midPoint,
+        paint);
+    drawCurveClock(
+        midPoint,
+        endPoint,
+        paint);
+  }
 }
+

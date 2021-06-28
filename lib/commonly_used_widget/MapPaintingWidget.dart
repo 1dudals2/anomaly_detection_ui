@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 double containerWidth = 400;
 double containerHeight = 400;
-double scaleFactorForWidget = 0.001;
+double scaleFactorForWidget = 0.003;
 
 class MapPaintingWidget extends StatefulWidget {
   const MapPaintingWidget({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
             width: containerWidth,
             height: containerHeight,
             child: InteractiveViewer(
-              maxScale: 10000,
+              maxScale: 100000,
               minScale: 0.2,
               panEnabled: true,
               child: Transform.scale(
@@ -50,16 +50,36 @@ class OpenPainter extends CustomPainter{
     canvas.translate(-containerWidth * (1/scaleFactorForWidget) * (1/2), containerHeight * (1/scaleFactorForWidget) * (1/2));
     paint.color = Colors.lightBlue;
     paint.style = PaintingStyle.stroke;
-    paint.strokeWidth = 500;
+    paint.strokeWidth = 100;
     DrawingManager drawingManager = new DrawingManager(canvas);
     drawingManager.draw180CurveLeft(
         Offset(6775, -40930),
         Offset(6775,-39010),
         paint,
-        3000,
+        500,
     );
-
-
+    drawingManager.drawCurveClock(
+      Offset(2500, -44714),
+      Offset(3547,-46500),
+      paint,
+    );
+    drawingManager.drawCurveCounter(
+        Offset(3547, -46500),
+        Offset(4800, -44935),
+        paint
+    );
+    drawingManager.drawSCurve(
+        Offset(9557, -41930),
+        Offset(6775 , -40930),
+        paint)
+    ;
+    drawingManager.drawSCurve(
+    Offset(12434, -41930), Offset(14985, -40930), paint);
+    drawingManager.drawCurveClock(
+      Offset(4800, -37407),
+      Offset(7122, -39010),
+      paint
+    );
   }
 
   @override

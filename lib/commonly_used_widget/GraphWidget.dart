@@ -18,11 +18,6 @@ class _GraphWidgetState extends State<GraphWidget> {
   @override
   Widget build(BuildContext context) {
     MQTTModel mqttModel = context.watch<MQTTModel>();
-    if(mqttInitialized ==false) {
-      MQTTManager().InitMQTTManager(mqttModel, "01", DataCollectManager());
-      mqttModel.addOht("01");
-      mqttInitialized = true;
-    }
     return Container(
       child: SfCartesianChart(
           primaryYAxis: NumericAxis(
@@ -44,10 +39,20 @@ class _GraphWidgetState extends State<GraphWidget> {
           // Enable tooltip
           tooltipBehavior: TooltipBehavior(enable: true),
           series: <ChartSeries<OhtDataModel, String>>[
+
             LineSeries<OhtDataModel, String>(
                 dataSource: mqttModel.ohtDatas["01"]!.toList(),
                 xValueMapper: (OhtDataModel anomal_timestamp, _) => mqttModel.ohtDatas["01"]!.elementAt(_).anomal_timestamp ,
                 yValueMapper: (OhtDataModel accy_rms, _) => mqttModel.ohtDatas["01"]!.elementAt(_).accx_rms ,
+                /* xValueMapper: (OmsDataModel sales, _) => sales.year,
+                                yValueMapper: (OmsDataModel sales, _) => sales.sales,*/
+                name: 'Vehicle01',
+                // Enable data label
+                dataLabelSettings: DataLabelSettings(isVisible: true)),
+            LineSeries<OhtDataModel, String>(
+                dataSource: mqttModel.ohtDatas["01"]!.toList(),
+                xValueMapper: (OhtDataModel anomal_timestamp, _) => mqttModel.ohtDatas["01"]!.elementAt(_).anomal_timestamp ,
+                yValueMapper: (OhtDataModel accy_rms, _) => mqttModel.ohtDatas["01"]!.elementAt(_).accy_rms ,
                 /* xValueMapper: (OmsDataModel sales, _) => sales.year,
                                 yValueMapper: (OmsDataModel sales, _) => sales.sales,*/
                 name: 'Vehicle01',
