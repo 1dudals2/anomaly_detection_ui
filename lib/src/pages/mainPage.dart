@@ -43,36 +43,40 @@ class _MainPageState extends State<MainPage> {
 
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              WindowTitleBarBox(
-                child: Row(
-                  children: [
-                    TrackButton(changeModeFunction: changeModeFunction,currentMode: mode,),
-                    VehicleButton(changeModeFunction: changeModeFunction,currentMode : mode),
-                    Expanded(child: MoveWindow()),
-                    Row(
-                      children: [
-                        MinimizeWindowButton(
-                          colors: buttonColors,
-                        ),
-                        MaximizeWindowButton(
-                          colors: buttonColors,
-                        ),
-                        CloseWindowButton(
-                          colors: closeButtonColors,
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            WindowTitleBarBox(
+              child: Row(
+                children: [
+                  TrackButton(changeModeFunction: changeModeFunction,currentMode: mode,),
+                  VehicleButton(changeModeFunction: changeModeFunction,currentMode : mode),
+                  Expanded(child: MoveWindow()),
+                  Row(
+                    children: [
+                      MinimizeWindowButton(
+                        colors: buttonColors,
+                      ),
+                      MaximizeWindowButton(
+                        colors: buttonColors,
+                      ),
+                      CloseWindowButton(
+                        colors: closeButtonColors,
+                      ),
+                    ],
+                  )
+                ],
               ),
-              mode == 0 ?TrackPage()
-              : VehiclePage(),
-            ],
-          ),
+            ),
+            mode == 0 ?
+            Expanded(
+              child: SingleChildScrollView(
+                //scrollDirection: Axis.horizontal,
+                  child: TrackPage()
+              ),
+            )
+            : VehiclePage(),
+          ],
         ),
       ),
     );

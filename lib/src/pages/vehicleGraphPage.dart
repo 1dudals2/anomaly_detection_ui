@@ -15,7 +15,6 @@ class _VehicleGraphPageState extends State<VehicleGraphPage> {
     double height = (MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight)*0.5;
     return Container(
       color: Colors.red,
-      child: Text('sex'),
      // width: width,
       height: 100,
     );

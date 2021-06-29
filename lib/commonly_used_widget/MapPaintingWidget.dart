@@ -18,7 +18,7 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
+    double width = MediaQuery.of(context).size.width ;
     double height = MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight;
     containerWidth = width;
     containerHeight = height * 0.5;

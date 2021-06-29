@@ -15,9 +15,42 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
     double height = (MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight)*0.5;
-    return Expanded(
-      child: Container(
-        color: Colors.grey,
+    return Padding(
+      padding: EdgeInsets.fromLTRB(0, 30,0, 0),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 200,
+                width: 400,
+                color: Colors.amberAccent,
+              ),
+              SizedBox(width: 50,),
+              Container(
+                height: 200,
+                width: 400,
+                color: Colors.amberAccent,
+              )
+            ],
+          ),
+          SizedBox(height: 50,),
+          Row(
+            children: [
+              Container(
+                height: 200,
+                width: 400,
+                color: Colors.amberAccent,
+              ),
+              SizedBox(width: 50,),
+              Container(
+                height: 200,
+                width: 400,
+                color: Colors.amberAccent,
+              )
+            ],
+          )
+        ],
       ),
     );
   }

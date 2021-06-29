@@ -2,6 +2,7 @@ import 'package:anomaly_detection_ui/commonly_used_widget/MapPaintingWidget.dart
 import 'package:anomaly_detection_ui/commonly_used_widget/anomalDataHistoryTable.dart';
 import 'package:anomaly_detection_ui/commonly_used_widget/trackPlotWidget.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class TrackPage extends StatefulWidget {
   const TrackPage({Key? key}) : super(key: key);
@@ -13,21 +14,12 @@ class TrackPage extends StatefulWidget {
 class _TrackPageState extends State<TrackPage> {
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: [
-          MapPaintingWidget(),
-          Expanded(
-            child: Row(
-              children: [
-                  AnomalHistoryTable(),
-                  TrackPlotWidget()
-
-              ],
-            ),
-          )
-        ],
-      ),
+    return Column(
+     // mainAxis: Axis.horizontal,
+      children: [
+        MapPaintingWidget(),
+        AnomalHistoryTable(),
+      ],
     );
   }
 }
