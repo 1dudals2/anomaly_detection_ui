@@ -2,6 +2,7 @@ import 'package:anomaly_detection_ui/commonly_used_widget/VehicleList.dart';
 import 'package:anomaly_detection_ui/src/pages/vehicleChartPage.dart';
 import 'package:anomaly_detection_ui/src/pages/vehicleGraphPage.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:provider/provider.dart';
 class VehiclePage extends StatefulWidget {
@@ -25,8 +26,7 @@ class _VehiclePageState extends State<VehiclePage> {
               VehicleChartPage(),
               VehicleGraphPage(),
             ],
-          )
-
+          ),
         ],
       ),
     );

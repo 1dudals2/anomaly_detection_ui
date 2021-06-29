@@ -18,7 +18,7 @@ class DataCollectManager{
 
 
   void startStoreData( OhtDataModel data,int numberOfDatasNeeded) async {
-    if(csvBase.length < numberOfDatasNeeded / 100){
+    if(csvBase.length < numberOfDatasNeeded / 1000){
       csvBase.add([
         data.anomal_timestamp,
         data.accx_rms,
@@ -38,7 +38,7 @@ class DataCollectManager{
 
     else if (dataWrittenToFile <= numberOfDatasNeeded){
       Isolate.spawn(writeToFile, csvBase);
-      dataWrittenToFile += 10;
+      dataWrittenToFile += 1000;
       csvBase = [];
       csvBase.add([
         data.anomal_timestamp,

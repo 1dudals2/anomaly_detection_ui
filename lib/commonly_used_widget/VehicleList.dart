@@ -1,10 +1,8 @@
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
-import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:provider/provider.dart';
 
 class VehicleList extends StatefulWidget {
@@ -19,16 +17,18 @@ class _VehicleListState extends State<VehicleList> {
   bool mqttInitialized = false;
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio*0.3;
+    double width = MediaQuery.of(context).size.width *0.3;
     MQTTModel mqttModel = context.watch<MQTTModel>();
     if(mqttInitialized ==false) {
-      MQTTManager().InitMQTTManager(mqttModel, "01", DataCollectManager());
-      mqttModel.addOht("01");
+      MQTTManager().InitMQTTManager(mqttModel, DataCollectManager());
       mqttInitialized = true;
     }
+    if(mqttModel.ohtDatas[mqttModel.currentVehicleId] != null){
+      //print(mqttModel.ohtDatas[mqttModel.currentVehicleId]!.first.vehicle_id);
+    }
     int? numberOfVehicles = 0;
-    if( mqttModel.ohtDatas["01"] != null && mqttModel.ohtDatas["01"]!.isNotEmpty && mqttModel. ohtDatas["01"]?.last?.num_of_vehicles != null)
-      numberOfVehicles = mqttModel. ohtDatas["01"]?.last.num_of_vehicles;
+    if( mqttModel.ohtDatas[mqttModel.currentVehicleId] != null && mqttModel.ohtDatas[mqttModel.currentVehicleId]!.isNotEmpty && mqttModel. ohtDatas["01"]?.last?.num_of_vehicles != null)
+      numberOfVehicles = mqttModel. ohtDatas[mqttModel.currentVehicleId]?.last.num_of_vehicles;
     return  Container(
       width: 300,
       decoration: BoxDecoration(
@@ -48,17 +48,17 @@ class _VehicleListState extends State<VehicleList> {
                 border: Border.all(color: Colors.blueAccent)
             ),
           ),
-          mqttModel.ohtDatas["01"] != null ? Expanded(
+          mqttModel.ohtDatas[mqttModel.currentVehicleId] != null ? Expanded(
             child: Container(
               width: 300,
               child: ListView.builder(
                   shrinkWrap: true,
-                  itemCount: 6,//itemCount: numberOfVehicles, @todo number of vehicles로 바꿔야함
+                  itemCount: numberOfVehicles,//itemCount: numberOfVehicles, @todo number of vehicles로 바꿔야함
                   itemBuilder: (BuildContext context, int index){
                     return GestureDetector(
-                      onDoubleTap: (){
-
-                      },
+                      onTap: (){
+                        mqttModel.changeCurrentVehicleId(index);
+                        },
                       child: Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.blueAccent)

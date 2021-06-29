@@ -17,7 +17,7 @@ class _VehicleGraphPageState extends State<VehicleGraphPage> {
       color: Colors.red,
       child: Text('sex'),
      // width: width,
-      height: height,
+      height: 100,
     );
   }
 }

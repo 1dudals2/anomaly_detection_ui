@@ -1,20 +1,16 @@
-import 'package:anomaly_detection_ui/commonly_used_widget/MapPaintingWidget.dart';
-import 'package:anomaly_detection_ui/commonly_used_widget/VehicleList.dart';
 import 'package:anomaly_detection_ui/commonly_used_widget/trackButton.dart';
 import 'package:anomaly_detection_ui/commonly_used_widget/vehicleButton.dart';
 import 'package:anomaly_detection_ui/constants/WindowsButtonColor.dart';
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
-import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:anomaly_detection_ui/src/pages/trackPage.dart';
 import 'package:anomaly_detection_ui/src/pages/vehiclePage.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:syncfusion_flutter_charts/sparkcharts.dart';
+
 
 class MainPage extends StatefulWidget{
 
@@ -35,7 +31,7 @@ class _MainPageState extends State<MainPage> {
 
     MQTTModel mqttModel = context.watch<MQTTModel>();
     if(mqttInitialized ==false) {
-      MQTTManager().InitMQTTManager(mqttModel, "01", DataCollectManager());
+      MQTTManager().InitMQTTManager(mqttModel, DataCollectManager());
       mqttModel.addOht("01");
       mqttInitialized = true;
     }
@@ -59,7 +55,6 @@ class _MainPageState extends State<MainPage> {
                     Expanded(child: MoveWindow()),
                     Row(
                       children: [
-
                         MinimizeWindowButton(
                           colors: buttonColors,
                         ),
@@ -69,7 +64,6 @@ class _MainPageState extends State<MainPage> {
                         CloseWindowButton(
                           colors: closeButtonColors,
                         ),
-
                       ],
                     )
                   ],

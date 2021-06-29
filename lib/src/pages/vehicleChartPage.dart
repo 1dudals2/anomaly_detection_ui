@@ -12,14 +12,14 @@ class VehicleChartPage extends StatefulWidget {
 class _VehicleChartPageState extends State<VehicleChartPage> {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio-300;
+    double width = MediaQuery.of(context).size.width-300 ;
     double height = (MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight)*0.5;
     return Container(
       width: width,
       height: height,
-      //color: Colors.red,
+      color: Colors.red,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             width: width*0.5,
@@ -29,8 +29,8 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
           ),
           SingleChildScrollView(
             child: Container(
-              //color: Colors.blue,
-              width: width*0.5,
+              color: Colors.blue,
+              width: (width)*0.5,
               height: height,
               child: Column(
                 children: [

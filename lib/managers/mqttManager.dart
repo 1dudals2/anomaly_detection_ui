@@ -5,11 +5,11 @@ import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:mqtt_client/mqtt_client.dart';
 import 'package:mqtt_client/mqtt_server_client.dart';
-
+import 'package:anomaly_detection_ui/models/mqttModel.dart';
 
 final client = MqttServerClient('localhost', '');
 class MQTTManager {
-  void InitMQTTManager(MQTTModel model, String ohtId,DataCollectManager dataManager) async {
+  void InitMQTTManager(MQTTModel model,DataCollectManager dataManager) async {
     client.logging(on: false);
     client.onDisconnected = onDisconnected;
     client.onConnected = onConnected;
@@ -48,30 +48,43 @@ class MQTTManager {
       client.disconnect();
       exit(-1);
     }
-
-    var topic = 'oms/vehicle/SS-FA-EM-00-00-'+ohtId+'/anomalyDetection'; // Not a wildcard topic
+    bool moreVehiclesLeft = true;
+    int currentOhtNumber  = 1;
+/*    while(moreVehiclesLeft){
+      String ohtId = "";
+      if(currentOhtNumber < 10){
+        ohtId += "0" + currentOhtNumber.toString();
+      }
+      else{
+        ohtId = currentOhtNumber.toString();
+      }
+      var topic = 'oms/vehicle/SS-FA-EM-00-00-'+ohtId+'/anomalyDetection';
+      Subscription? subs = client.subscribe(topic, MqttQos.atMostOnce);
+      if(subs != null){
+        model.addOht(ohtId);
+        currentOhtNumber++;
+      }
+      else{
+        moreVehiclesLeft = false;
+      }
+    } */
+    var topic = 'oms/vehicle/anomalyDetection';
     client.subscribe(topic, MqttQos.atMostOnce);
-
     client.updates!.listen((List<MqttReceivedMessage<MqttMessage?>>? c) {
       final recMess = c![0].payload as MqttPublishMessage;
       final pt =
       MqttPublishPayload.bytesToStringAsString(recMess.payload.message!);
-
+      //print(pt);
       OhtDataModel mqtt = OhtDataModel.fromJson(jsonDecode(pt));
-      model.addToDatas(ohtId,mqtt);
-      //dataManager.startStoreData(mqtt, 1000);
+      //print(mqtt.vehicle_id);
+      if(!model.ohtDatas.keys.contains(mqtt.vehicle_id)) model.addOht(mqtt.vehicle_id);
+      model.addToDatas(mqtt.vehicle_id ,mqtt);
     });
 
-    /*client.published!.listen((MqttPublishMessage message) {
-      print(
-          'EXAMPLE::Published notification:: topic is ${message.variableHeader!
-              .topicName}, with Qos ${message.header!.qos}');
-    });*/
   }
 
   /// The subscribed callback
   void onSubscribed(String topic) {
-    //print('EXAMPLE::Subscription confirmed for topic $topic');
 
   }
 
