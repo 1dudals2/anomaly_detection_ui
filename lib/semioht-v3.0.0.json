@@ -1,0 +1,5222 @@
+{
+  "map_type": "FILE",
+  "points": [
+    {
+      "x": 2500,
+      "y": 44714,
+      "logical_id": "PS1",
+      "physical_id": "110001",
+      "id": 1
+    },
+    {
+      "x": 2500,
+      "y": 43064,
+      "logical_id": "PS2",
+      "physical_id": "110002",
+      "id": 2
+    },
+    {
+      "x": 2500,
+      "y": 41064,
+      "logical_id": "PS3",
+      "physical_id": "110003",
+      "id": 3
+    },
+    {
+      "x": 2500,
+      "y": 39564,
+      "logical_id": "PS4",
+      "physical_id": "110004",
+      "id": 4
+    },
+    {
+      "x": 2500,
+      "y": 37436,
+      "logical_id": "PS7",
+      "physical_id": "110005",
+      "id": 7
+    },
+    {
+      "x": 2500,
+      "y": 34927,
+      "logical_id": "PS8",
+      "physical_id": "110006",
+      "id": 8
+    },
+    {
+      "x": 2500,
+      "y": 33027,
+      "logical_id": "PS9",
+      "physical_id": "110007",
+      "id": 9
+    },
+    {
+      "x": 2500,
+      "y": 31124,
+      "logical_id": "PS11",
+      "physical_id": "110008",
+      "id": 11
+    },
+    {
+      "x": 2500,
+      "y": 28563,
+      "logical_id": "PS13",
+      "physical_id": "110009",
+      "id": 13
+    },
+    {
+      "x": 3753,
+      "y": 26998,
+      "logical_id": "PS14",
+      "physical_id": "110501",
+      "id": 14
+    },
+    {
+      "x": 4800,
+      "y": 28536,
+      "logical_id": "PS15",
+      "physical_id": "140001",
+      "id": 15
+    },
+    {
+      "x": 4800,
+      "y": 30280,
+      "logical_id": "PS17",
+      "physical_id": "140002",
+      "id": 17
+    },
+    {
+      "x": 4800,
+      "y": 32702,
+      "logical_id": "PS18",
+      "physical_id": "140003",
+      "id": 18
+    },
+    {
+      "x": 4800,
+      "y": 34873,
+      "logical_id": "PS19",
+      "physical_id": "140004",
+      "id": 19
+    },
+    {
+      "x": 4800,
+      "y": 37407,
+      "logical_id": "PS20",
+      "physical_id": "140005",
+      "id": 20
+    },
+    {
+      "x": 4800,
+      "y": 40081,
+      "logical_id": "PS21",
+      "physical_id": "140006",
+      "id": 21
+    },
+    {
+      "x": 4800,
+      "y": 42253,
+      "logical_id": "PS22",
+      "physical_id": "140007",
+      "id": 22
+    },
+    {
+      "x": 4800,
+      "y": 43148,
+      "logical_id": "PS23",
+      "physical_id": "140008",
+      "id": 23
+    },
+    {
+      "x": 4800,
+      "y": 44148,
+      "logical_id": "PS24",
+      "physical_id": "140009",
+      "id": 24
+    },
+    {
+      "x": 4800,
+      "y": 44935,
+      "logical_id": "PS25",
+      "physical_id": "140010",
+      "id": 25
+    },
+    {
+      "x": 3547,
+      "y": 46500,
+      "logical_id": "PS26",
+      "physical_id": "140501",
+      "id": 26
+    },
+    {
+      "x": 3150,
+      "y": 44139,
+      "logical_id": "PS27",
+      "physical_id": "120001",
+      "id": 27
+    },
+    {
+      "x": 3150,
+      "y": 42241,
+      "logical_id": "PS28",
+      "physical_id": "120002",
+      "id": 28
+    },
+    {
+      "x": 3150,
+      "y": 40241,
+      "logical_id": "PS29",
+      "physical_id": "120003",
+      "id": 29
+    },
+    {
+      "x": 3150,
+      "y": 38741,
+      "logical_id": "PS30",
+      "physical_id": "120004",
+      "id": 30
+    },
+    {
+      "x": 3150,
+      "y": 37663,
+      "logical_id": "PS31",
+      "physical_id": "120005",
+      "id": 31
+    },
+    {
+      "x": 3150,
+      "y": 35154,
+      "logical_id": "PS32",
+      "physical_id": "120006",
+      "id": 32
+    },
+    {
+      "x": 3150,
+      "y": 33028,
+      "logical_id": "PS33",
+      "physical_id": "120007",
+      "id": 33
+    },
+    {
+      "x": 3150,
+      "y": 31028,
+      "logical_id": "PS34",
+      "physical_id": "120008",
+      "id": 34
+    },
+    {
+      "x": 3150,
+      "y": 29394,
+      "logical_id": "PS35",
+      "physical_id": "120009",
+      "id": 35
+    },
+    {
+      "x": 4150,
+      "y": 29367,
+      "logical_id": "PS36",
+      "physical_id": "130001",
+      "id": 36
+    },
+    {
+      "x": 4150,
+      "y": 31265,
+      "logical_id": "PS37",
+      "physical_id": "130002",
+      "id": 37
+    },
+    {
+      "x": 4150,
+      "y": 33265,
+      "logical_id": "PS38",
+      "physical_id": "130003",
+      "id": 38
+    },
+    {
+      "x": 4150,
+      "y": 35127,
+      "logical_id": "PS39",
+      "physical_id": "130004",
+      "id": 39
+    },
+    {
+      "x": 4150,
+      "y": 37636,
+      "logical_id": "PS40",
+      "physical_id": "130005",
+      "id": 40
+    },
+    {
+      "x": 4150,
+      "y": 39534,
+      "logical_id": "PS41",
+      "physical_id": "130006",
+      "id": 41
+    },
+    {
+      "x": 4150,
+      "y": 41534,
+      "logical_id": "PS42",
+      "physical_id": "130007",
+      "id": 42
+    },
+    {
+      "x": 4150,
+      "y": 44112,
+      "logical_id": "PS45",
+      "physical_id": "130008",
+      "id": 45
+    },
+    {
+      "x": 7122,
+      "y": 39010,
+      "logical_id": "PS46",
+      "physical_id": "101201",
+      "id": 46
+    },
+    {
+      "x": 8021,
+      "y": 39010,
+      "logical_id": "PS49",
+      "physical_id": "101202",
+      "id": 49
+    },
+    {
+      "x": 9078,
+      "y": 39010,
+      "logical_id": "PS53",
+      "physical_id": "101203",
+      "id": 53
+    },
+    {
+      "x": 12898,
+      "y": 39010,
+      "logical_id": "PS54",
+      "physical_id": "101204",
+      "id": 54
+    },
+    {
+      "x": 15065,
+      "y": 39010,
+      "logical_id": "PS61",
+      "physical_id": "101205",
+      "id": 61
+    },
+    {
+      "x": 16202,
+      "y": 40072,
+      "logical_id": "PS62",
+      "physical_id": "101504",
+      "id": 62
+    },
+    {
+      "x": 14985,
+      "y": 40930,
+      "logical_id": "PS63",
+      "physical_id": "101101",
+      "id": 63
+    },
+    {
+      "x": 12737,
+      "y": 40930,
+      "logical_id": "PT64",
+      "physical_id": "551101",
+      "id": 64
+    },
+    {
+      "x": 9247,
+      "y": 40930,
+      "logical_id": "PT66",
+      "physical_id": "551102",
+      "id": 66
+    },
+    {
+      "x": 6775,
+      "y": 40930,
+      "logical_id": "PS68",
+      "physical_id": "101104",
+      "id": 68
+    },
+    {
+      "x": 5802,
+      "y": 39866,
+      "logical_id": "PS69",
+      "physical_id": "101501",
+      "id": 69
+    },
+    {
+      "x": 10427,
+      "y": 40078,
+      "logical_id": "PS70",
+      "physical_id": "101502",
+      "id": 70
+    },
+    {
+      "x": 11577,
+      "y": 39867,
+      "logical_id": "PS71",
+      "physical_id": "101503",
+      "id": 71
+    },
+    {
+      "x": 12434,
+      "y": 41930,
+      "logical_id": "PS72",
+      "physical_id": "101301",
+      "id": 72
+    },
+    {
+      "x": 11534,
+      "y": 41930,
+      "logical_id": "PS73",
+      "physical_id": "101302",
+      "id": 73
+    },
+    {
+      "x": 10534,
+      "y": 41930,
+      "logical_id": "PS74",
+      "physical_id": "101303",
+      "id": 74
+    },
+    {
+      "x": 9557,
+      "y": 41930,
+      "logical_id": "PS75",
+      "physical_id": "101304",
+      "id": 75
+    },
+    {
+      "x": 7122,
+      "y": 31630,
+      "logical_id": "PS76",
+      "physical_id": "102201",
+      "id": 76
+    },
+    {
+      "x": 8020,
+      "y": 31630,
+      "logical_id": "PS79",
+      "physical_id": "102202",
+      "id": 79
+    },
+    {
+      "x": 9077,
+      "y": 31630,
+      "logical_id": "PS83",
+      "physical_id": "102203",
+      "id": 83
+    },
+    {
+      "x": 12897,
+      "y": 31630,
+      "logical_id": "PS84",
+      "physical_id": "102204",
+      "id": 84
+    },
+    {
+      "x": 14852,
+      "y": 31630,
+      "logical_id": "PS87",
+      "physical_id": "102206",
+      "id": 87
+    },
+    {
+      "x": 16201,
+      "y": 32693,
+      "logical_id": "PS88",
+      "physical_id": "102504",
+      "id": 88
+    },
+    {
+      "x": 14879,
+      "y": 33550,
+      "logical_id": "PS89",
+      "physical_id": "102101",
+      "id": 89
+    },
+    {
+      "x": 13980,
+      "y": 33550,
+      "logical_id": "PS92",
+      "physical_id": "102102",
+      "id": 92
+    },
+    {
+      "x": 12924,
+      "y": 33550,
+      "logical_id": "PS96",
+      "physical_id": "102103",
+      "id": 96
+    },
+    {
+      "x": 9103,
+      "y": 33550,
+      "logical_id": "PS97",
+      "physical_id": "102104",
+      "id": 97
+    },
+    {
+      "x": 7149,
+      "y": 33550,
+      "logical_id": "PS100",
+      "physical_id": "102106",
+      "id": 100
+    },
+    {
+      "x": 5800,
+      "y": 32487,
+      "logical_id": "PS101",
+      "physical_id": "102501",
+      "id": 101
+    },
+    {
+      "x": 10426,
+      "y": 32673,
+      "logical_id": "PS102",
+      "physical_id": "102502",
+      "id": 102
+    },
+    {
+      "x": 11575,
+      "y": 32487,
+      "logical_id": "PS103",
+      "physical_id": "102503",
+      "id": 103
+    },
+    {
+      "x": 17202,
+      "y": 42803,
+      "logical_id": "PS104",
+      "physical_id": "150001",
+      "id": 104
+    },
+    {
+      "x": 17202,
+      "y": 42280,
+      "logical_id": "PS105",
+      "physical_id": "150002",
+      "id": 105
+    },
+    {
+      "x": 17202,
+      "y": 39858,
+      "logical_id": "PS106",
+      "physical_id": "150003",
+      "id": 106
+    },
+    {
+      "x": 17202,
+      "y": 37687,
+      "logical_id": "PS107",
+      "physical_id": "150004",
+      "id": 107
+    },
+    {
+      "x": 17202,
+      "y": 36786,
+      "logical_id": "PS108",
+      "physical_id": "150005",
+      "id": 108
+    },
+    {
+      "x": 17202,
+      "y": 35786,
+      "logical_id": "PS109",
+      "physical_id": "150006",
+      "id": 109
+    },
+    {
+      "x": 17202,
+      "y": 34900,
+      "logical_id": "PS110",
+      "physical_id": "150007",
+      "id": 110
+    },
+    {
+      "x": 17202,
+      "y": 32479,
+      "logical_id": "PS111",
+      "physical_id": "150008",
+      "id": 111
+    },
+    {
+      "x": 17202,
+      "y": 30307,
+      "logical_id": "PS112",
+      "physical_id": "150009",
+      "id": 112
+    },
+    {
+      "x": 17202,
+      "y": 28406,
+      "logical_id": "PS114",
+      "physical_id": "150010",
+      "id": 114
+    },
+    {
+      "x": 17202,
+      "y": 26406,
+      "logical_id": "PS116",
+      "physical_id": "150011",
+      "id": 116
+    },
+    {
+      "x": 17202,
+      "y": 24406,
+      "logical_id": "PS117",
+      "physical_id": "150012",
+      "id": 117
+    },
+    {
+      "x": 17202,
+      "y": 22406,
+      "logical_id": "PS118",
+      "physical_id": "150013",
+      "id": 118
+    },
+    {
+      "x": 17202,
+      "y": 20406,
+      "logical_id": "PS119",
+      "physical_id": "150014",
+      "id": 119
+    },
+    {
+      "x": 17202,
+      "y": 18819,
+      "logical_id": "PS120",
+      "physical_id": "150015",
+      "id": 120
+    },
+    {
+      "x": 17202,
+      "y": 17819,
+      "logical_id": "PS121",
+      "physical_id": "150016",
+      "id": 121
+    },
+    {
+      "x": 17202,
+      "y": 15208,
+      "logical_id": "PS122",
+      "physical_id": "150017",
+      "id": 122
+    },
+    {
+      "x": 17202,
+      "y": 13314,
+      "logical_id": "PS123",
+      "physical_id": "150018",
+      "id": 123
+    },
+    {
+      "x": 17202,
+      "y": 11314,
+      "logical_id": "PS124",
+      "physical_id": "150019",
+      "id": 124
+    },
+    {
+      "x": 17202,
+      "y": 9314,
+      "logical_id": "PS125",
+      "physical_id": "150020",
+      "id": 125
+    },
+    {
+      "x": 17202,
+      "y": 7314,
+      "logical_id": "PS127",
+      "physical_id": "150021",
+      "id": 127
+    },
+    {
+      "x": 17202,
+      "y": 6027,
+      "logical_id": "PS128",
+      "physical_id": "150022",
+      "id": 128
+    },
+    {
+      "x": 18202,
+      "y": 6000,
+      "logical_id": "PS129",
+      "physical_id": "160001",
+      "id": 129
+    },
+    {
+      "x": 18202,
+      "y": 7895,
+      "logical_id": "PS130",
+      "physical_id": "160002",
+      "id": 130
+    },
+    {
+      "x": 18202,
+      "y": 9895,
+      "logical_id": "PS133",
+      "physical_id": "160003",
+      "id": 133
+    },
+    {
+      "x": 18202,
+      "y": 11895,
+      "logical_id": "PS134",
+      "physical_id": "160004",
+      "id": 134
+    },
+    {
+      "x": 18202,
+      "y": 13895,
+      "logical_id": "PS135",
+      "physical_id": "160005",
+      "id": 135
+    },
+    {
+      "x": 18202,
+      "y": 15895,
+      "logical_id": "PS136",
+      "physical_id": "160006",
+      "id": 136
+    },
+    {
+      "x": 18202,
+      "y": 17895,
+      "logical_id": "PS137",
+      "physical_id": "160007",
+      "id": 137
+    },
+    {
+      "x": 18202,
+      "y": 19895,
+      "logical_id": "PS138",
+      "physical_id": "160008",
+      "id": 138
+    },
+    {
+      "x": 18202,
+      "y": 21895,
+      "logical_id": "PS139",
+      "physical_id": "160009",
+      "id": 139
+    },
+    {
+      "x": 18202,
+      "y": 23895,
+      "logical_id": "PS140",
+      "physical_id": "160010",
+      "id": 140
+    },
+    {
+      "x": 18202,
+      "y": 25895,
+      "logical_id": "PS141",
+      "physical_id": "160011",
+      "id": 141
+    },
+    {
+      "x": 18202,
+      "y": 27895,
+      "logical_id": "PS142",
+      "physical_id": "160012",
+      "id": 142
+    },
+    {
+      "x": 18202,
+      "y": 29895,
+      "logical_id": "PS143",
+      "physical_id": "160013",
+      "id": 143
+    },
+    {
+      "x": 18202,
+      "y": 31895,
+      "logical_id": "PS144",
+      "physical_id": "160014",
+      "id": 144
+    },
+    {
+      "x": 18202,
+      "y": 33895,
+      "logical_id": "PS145",
+      "physical_id": "160015",
+      "id": 145
+    },
+    {
+      "x": 18202,
+      "y": 35895,
+      "logical_id": "PS146",
+      "physical_id": "160016",
+      "id": 146
+    },
+    {
+      "x": 18202,
+      "y": 37895,
+      "logical_id": "PS147",
+      "physical_id": "160017",
+      "id": 147
+    },
+    {
+      "x": 18202,
+      "y": 39895,
+      "logical_id": "PS148",
+      "physical_id": "160018",
+      "id": 148
+    },
+    {
+      "x": 18202,
+      "y": 42782,
+      "logical_id": "PS151",
+      "physical_id": "160019",
+      "id": 151
+    }
+  ],
+  "homes": [],
+  "vehicles": [],
+  "segments": [
+    {
+      "start_point": 1,
+      "end_point": 2,
+      "speed": 555,
+      "length": 1650,
+      "travel_time": 2.972972972972973,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 1
+    },
+    {
+      "start_point": 2,
+      "end_point": 3,
+      "speed": 555,
+      "length": 2000,
+      "travel_time": 3.6036036036036037,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 2
+    },
+    {
+      "start_point": 3,
+      "end_point": 4,
+      "speed": 555,
+      "length": 1500,
+      "travel_time": 2.7027027027027026,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 3
+    },
+    {
+      "start_point": 4,
+      "end_point": 7,
+      "speed": 555,
+      "length": 2128,
+      "travel_time": 3.834234234234234,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 4
+    },
+    {
+      "start_point": 7,
+      "end_point": 8,
+      "speed": 555,
+      "length": 2509,
+      "travel_time": 4.52072072072072,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 7
+    },
+    {
+      "start_point": 8,
+      "end_point": 9,
+      "speed": 555,
+      "length": 1900,
+      "travel_time": 3.4234234234234235,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 8
+    },
+    {
+      "start_point": 9,
+      "end_point": 11,
+      "speed": 555,
+      "length": 1903,
+      "travel_time": 3.428828828828829,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 9
+    },
+    {
+      "start_point": 11,
+      "end_point": 13,
+      "speed": 555,
+      "length": 2561,
+      "travel_time": 4.614414414414415,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 11
+    },
+    {
+      "start_point": 13,
+      "end_point": 14,
+      "speed": 555,
+      "length": 2004,
+      "travel_time": 3.610810810810811,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 13
+    },
+    {
+      "start_point": 14,
+      "end_point": 15,
+      "speed": 555,
+      "length": 1860,
+      "travel_time": 3.3513513513513513,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 14
+    },
+    {
+      "start_point": 15,
+      "end_point": 17,
+      "speed": 555,
+      "length": 1744,
+      "travel_time": 3.142342342342342,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 15
+    },
+    {
+      "start_point": 17,
+      "end_point": 18,
+      "speed": 555,
+      "length": 2422,
+      "travel_time": 4.363963963963964,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 17
+    },
+    {
+      "start_point": 18,
+      "end_point": 19,
+      "speed": 555,
+      "length": 2171,
+      "travel_time": 3.9117117117117117,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 18
+    },
+    {
+      "start_point": 19,
+      "end_point": 20,
+      "speed": 555,
+      "length": 2534,
+      "travel_time": 4.565765765765766,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 19
+    },
+    {
+      "start_point": 20,
+      "end_point": 21,
+      "speed": 555,
+      "length": 2674,
+      "travel_time": 4.818018018018018,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 20
+    },
+    {
+      "start_point": 21,
+      "end_point": 22,
+      "speed": 555,
+      "length": 2172,
+      "travel_time": 3.9135135135135135,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 21
+    },
+    {
+      "start_point": 22,
+      "end_point": 23,
+      "speed": 555,
+      "length": 895,
+      "travel_time": 1.6126126126126126,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 22
+    },
+    {
+      "start_point": 23,
+      "end_point": 24,
+      "speed": 555,
+      "length": 1000,
+      "travel_time": 1.8018018018018018,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 23
+    },
+    {
+      "start_point": 24,
+      "end_point": 25,
+      "speed": 555,
+      "length": 787,
+      "travel_time": 1.418018018018018,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 24
+    },
+    {
+      "start_point": 25,
+      "end_point": 26,
+      "speed": 500,
+      "length": 2004,
+      "travel_time": 4.008,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 25
+    },
+    {
+      "start_point": 26,
+      "end_point": 1,
+      "speed": 500,
+      "length": 2070,
+      "travel_time": 4.14,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 26
+    },
+    {
+      "start_point": 27,
+      "end_point": 28,
+      "speed": 555,
+      "length": 1898,
+      "travel_time": 3.41981981981982,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 27
+    },
+    {
+      "start_point": 28,
+      "end_point": 29,
+      "speed": 555,
+      "length": 2000,
+      "travel_time": 3.6036036036036037,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 28
+    },
+    {
+      "start_point": 29,
+      "end_point": 30,
+      "speed": 555,
+      "length": 1500,
+      "travel_time": 2.7027027027027026,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 29
+    },
+    {
+      "start_point": 30,
+      "end_point": 31,
+      "speed": 555,
+      "length": 1078,
+      "travel_time": 1.9423423423423423,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 30
+    },
+    {
+      "start_point": 31,
+      "end_point": 32,
+      "speed": 555,
+      "length": 2509,
+      "travel_time": 4.52072072072072,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 31
+    },
+    {
+      "start_point": 32,
+      "end_point": 33,
+      "speed": 555,
+      "length": 2126,
+      "travel_time": 3.8306306306306306,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 32
+    },
+    {
+      "start_point": 33,
+      "end_point": 34,
+      "speed": 555,
+      "length": 2000,
+      "travel_time": 3.6036036036036037,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 33
+    },
+    {
+      "start_point": 34,
+      "end_point": 35,
+      "speed": 555,
+      "length": 1634,
+      "travel_time": 2.9441441441441443,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 34
+    },
+    {
+      "start_point": 36,
+      "end_point": 37,
+      "speed": 555,
+      "length": 1898,
+      "travel_time": 3.41981981981982,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 35
+    },
+    {
+      "start_point": 37,
+      "end_point": 38,
+      "speed": 555,
+      "length": 2000,
+      "travel_time": 3.6036036036036037,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 36
+    },
+    {
+      "start_point": 38,
+      "end_point": 39,
+      "speed": 555,
+      "length": 1862,
+      "travel_time": 3.354954954954955,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 37
+    },
+    {
+      "start_point": 39,
+      "end_point": 40,
+      "speed": 555,
+      "length": 2509,
+      "travel_time": 4.52072072072072,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 38
+    },
+    {
+      "start_point": 40,
+      "end_point": 41,
+      "speed": 555,
+      "length": 1898,
+      "travel_time": 3.41981981981982,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 39
+    },
+    {
+      "start_point": 41,
+      "end_point": 42,
+      "speed": 555,
+      "length": 2000,
+      "travel_time": 3.6036036036036037,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 40
+    },
+    {
+      "start_point": 42,
+      "end_point": 45,
+      "speed": 555,
+      "length": 2578,
+      "travel_time": 4.645045045045045,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 41
+    },
+    {
+      "start_point": 45,
+      "end_point": 27,
+      "speed": 500,
+      "length": 1000,
+      "travel_time": 2.0,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 44
+    },
+    {
+      "start_point": 35,
+      "end_point": 36,
+      "speed": 500,
+      "length": 1000,
+      "travel_time": 2.0,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 45
+    },
+    {
+      "start_point": 31,
+      "end_point": 8,
+      "speed": 222,
+      "length": 2812,
+      "travel_time": 12.666666666666666,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 46
+    },
+    {
+      "start_point": 19,
+      "end_point": 40,
+      "speed": 222,
+      "length": 2838,
+      "travel_time": 12.783783783783784,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 47
+    },
+    {
+      "start_point": 46,
+      "end_point": 49,
+      "speed": 3500,
+      "length": 899,
+      "travel_time": 0.25685714285714284,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 48
+    },
+    {
+      "start_point": 49,
+      "end_point": 53,
+      "speed": 3500,
+      "length": 1057,
+      "travel_time": 0.302,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 51
+    },
+    {
+      "start_point": 53,
+      "end_point": 54,
+      "speed": 3500,
+      "length": 3820,
+      "travel_time": 1.0914285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 55
+    },
+    {
+      "start_point": 54,
+      "end_point": 61,
+      "speed": 3500,
+      "length": 2167,
+      "travel_time": 0.6191428571428571,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 56
+    },
+    {
+      "start_point": 61,
+      "end_point": 62,
+      "speed": 500,
+      "length": 1555,
+      "travel_time": 3.11,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 63
+    },
+    {
+      "start_point": 62,
+      "end_point": 63,
+      "speed": 500,
+      "length": 1489,
+      "travel_time": 2.978,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 64
+    },
+    {
+      "start_point": 63,
+      "end_point": 64,
+      "speed": 3500,
+      "length": 2248,
+      "travel_time": 0.6422857142857142,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 65
+    },
+    {
+      "start_point": 64,
+      "end_point": 66,
+      "speed": 3500,
+      "length": 3490,
+      "travel_time": 0.9971428571428571,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 67
+    },
+    {
+      "start_point": 66,
+      "end_point": 68,
+      "speed": 3500,
+      "length": 2472,
+      "travel_time": 0.7062857142857143,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 69
+    },
+    {
+      "start_point": 68,
+      "end_point": 69,
+      "speed": 500,
+      "length": 1441,
+      "travel_time": 2.882,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 70
+    },
+    {
+      "start_point": 69,
+      "end_point": 46,
+      "speed": 500,
+      "length": 1573,
+      "travel_time": 3.146,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 71
+    },
+    {
+      "start_point": 53,
+      "end_point": 70,
+      "speed": 500,
+      "length": 1720,
+      "travel_time": 3.44,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 72
+    },
+    {
+      "start_point": 70,
+      "end_point": 66,
+      "speed": 500,
+      "length": 1455,
+      "travel_time": 2.91,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 73
+    },
+    {
+      "start_point": 64,
+      "end_point": 71,
+      "speed": 500,
+      "length": 1573,
+      "travel_time": 3.146,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 74
+    },
+    {
+      "start_point": 71,
+      "end_point": 54,
+      "speed": 500,
+      "length": 1574,
+      "travel_time": 3.148,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 75
+    },
+    {
+      "start_point": 72,
+      "end_point": 73,
+      "speed": 3500,
+      "length": 900,
+      "travel_time": 0.2571428571428571,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 76
+    },
+    {
+      "start_point": 73,
+      "end_point": 74,
+      "speed": 3500,
+      "length": 1000,
+      "travel_time": 0.2857142857142857,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 77
+    },
+    {
+      "start_point": 74,
+      "end_point": 75,
+      "speed": 3500,
+      "length": 977,
+      "travel_time": 0.27914285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 78
+    },
+    {
+      "start_point": 63,
+      "end_point": 72,
+      "speed": 500,
+      "length": 2740,
+      "travel_time": 5.48,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 79
+    },
+    {
+      "start_point": 75,
+      "end_point": 68,
+      "speed": 500,
+      "length": 2956,
+      "travel_time": 5.912,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 80
+    },
+    {
+      "start_point": 76,
+      "end_point": 79,
+      "speed": 3500,
+      "length": 898,
+      "travel_time": 0.25657142857142856,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 81
+    },
+    {
+      "start_point": 79,
+      "end_point": 83,
+      "speed": 3500,
+      "length": 1057,
+      "travel_time": 0.302,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 84
+    },
+    {
+      "start_point": 83,
+      "end_point": 84,
+      "speed": 3500,
+      "length": 3820,
+      "travel_time": 1.0914285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 88
+    },
+    {
+      "start_point": 84,
+      "end_point": 87,
+      "speed": 3500,
+      "length": 1955,
+      "travel_time": 0.5585714285714286,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 89
+    },
+    {
+      "start_point": 87,
+      "end_point": 88,
+      "speed": 500,
+      "length": 1717,
+      "travel_time": 3.434,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 92
+    },
+    {
+      "start_point": 88,
+      "end_point": 89,
+      "speed": 500,
+      "length": 1575,
+      "travel_time": 3.15,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 93
+    },
+    {
+      "start_point": 89,
+      "end_point": 92,
+      "speed": 3500,
+      "length": 899,
+      "travel_time": 0.25685714285714284,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 94
+    },
+    {
+      "start_point": 92,
+      "end_point": 96,
+      "speed": 3500,
+      "length": 1056,
+      "travel_time": 0.3017142857142857,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 97
+    },
+    {
+      "start_point": 96,
+      "end_point": 97,
+      "speed": 3500,
+      "length": 3821,
+      "travel_time": 1.0917142857142856,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 101
+    },
+    {
+      "start_point": 97,
+      "end_point": 100,
+      "speed": 3500,
+      "length": 1954,
+      "travel_time": 0.5582857142857143,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 102
+    },
+    {
+      "start_point": 100,
+      "end_point": 101,
+      "speed": 500,
+      "length": 1717,
+      "travel_time": 3.434,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 105
+    },
+    {
+      "start_point": 101,
+      "end_point": 76,
+      "speed": 500,
+      "length": 1575,
+      "travel_time": 3.15,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 106
+    },
+    {
+      "start_point": 83,
+      "end_point": 102,
+      "speed": 500,
+      "length": 1705,
+      "travel_time": 3.41,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 107
+    },
+    {
+      "start_point": 102,
+      "end_point": 97,
+      "speed": 500,
+      "length": 1587,
+      "travel_time": 3.174,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 108
+    },
+    {
+      "start_point": 96,
+      "end_point": 103,
+      "speed": 500,
+      "length": 1717,
+      "travel_time": 3.434,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 109
+    },
+    {
+      "start_point": 103,
+      "end_point": 84,
+      "speed": 500,
+      "length": 1575,
+      "travel_time": 3.15,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 110
+    },
+    {
+      "start_point": 104,
+      "end_point": 105,
+      "speed": 1500,
+      "length": 523,
+      "travel_time": 0.3486666666666667,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 111
+    },
+    {
+      "start_point": 105,
+      "end_point": 106,
+      "speed": 1500,
+      "length": 2422,
+      "travel_time": 1.6146666666666667,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 112
+    },
+    {
+      "start_point": 106,
+      "end_point": 107,
+      "speed": 1500,
+      "length": 2171,
+      "travel_time": 1.4473333333333334,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 113
+    },
+    {
+      "start_point": 107,
+      "end_point": 108,
+      "speed": 1500,
+      "length": 901,
+      "travel_time": 0.6006666666666667,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 114
+    },
+    {
+      "start_point": 108,
+      "end_point": 109,
+      "speed": 1500,
+      "length": 1000,
+      "travel_time": 0.6666666666666666,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 115
+    },
+    {
+      "start_point": 109,
+      "end_point": 110,
+      "speed": 1500,
+      "length": 886,
+      "travel_time": 0.5906666666666667,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 116
+    },
+    {
+      "start_point": 110,
+      "end_point": 111,
+      "speed": 1500,
+      "length": 2421,
+      "travel_time": 1.614,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 117
+    },
+    {
+      "start_point": 111,
+      "end_point": 112,
+      "speed": 1500,
+      "length": 2172,
+      "travel_time": 1.448,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 118
+    },
+    {
+      "start_point": 112,
+      "end_point": 114,
+      "speed": 3500,
+      "length": 1901,
+      "travel_time": 0.5431428571428571,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 119
+    },
+    {
+      "start_point": 114,
+      "end_point": 116,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 121
+    },
+    {
+      "start_point": 116,
+      "end_point": 117,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 123
+    },
+    {
+      "start_point": 117,
+      "end_point": 118,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 124
+    },
+    {
+      "start_point": 118,
+      "end_point": 119,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 125
+    },
+    {
+      "start_point": 119,
+      "end_point": 120,
+      "speed": 3500,
+      "length": 1587,
+      "travel_time": 0.4534285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 126
+    },
+    {
+      "start_point": 120,
+      "end_point": 121,
+      "speed": 3500,
+      "length": 1000,
+      "travel_time": 0.2857142857142857,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 127
+    },
+    {
+      "start_point": 121,
+      "end_point": 122,
+      "speed": 3500,
+      "length": 2611,
+      "travel_time": 0.746,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 128
+    },
+    {
+      "start_point": 122,
+      "end_point": 123,
+      "speed": 3500,
+      "length": 1894,
+      "travel_time": 0.5411428571428571,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 129
+    },
+    {
+      "start_point": 123,
+      "end_point": 124,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 130
+    },
+    {
+      "start_point": 124,
+      "end_point": 125,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 131
+    },
+    {
+      "start_point": 127,
+      "end_point": 128,
+      "speed": 3500,
+      "length": 1287,
+      "travel_time": 0.3677142857142857,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 134
+    },
+    {
+      "start_point": 128,
+      "end_point": 129,
+      "speed": 700,
+      "length": 1000,
+      "travel_time": 1.4285714285714286,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 135
+    },
+    {
+      "start_point": 129,
+      "end_point": 130,
+      "speed": 3500,
+      "length": 1895,
+      "travel_time": 0.5414285714285715,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 136
+    },
+    {
+      "start_point": 130,
+      "end_point": 133,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 137
+    },
+    {
+      "start_point": 133,
+      "end_point": 134,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 140
+    },
+    {
+      "start_point": 134,
+      "end_point": 135,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 141
+    },
+    {
+      "start_point": 135,
+      "end_point": 136,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 142
+    },
+    {
+      "start_point": 136,
+      "end_point": 137,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 143
+    },
+    {
+      "start_point": 137,
+      "end_point": 138,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 144
+    },
+    {
+      "start_point": 138,
+      "end_point": 139,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 145
+    },
+    {
+      "start_point": 139,
+      "end_point": 140,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 146
+    },
+    {
+      "start_point": 140,
+      "end_point": 141,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 147
+    },
+    {
+      "start_point": 141,
+      "end_point": 142,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 148
+    },
+    {
+      "start_point": 142,
+      "end_point": 143,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 149
+    },
+    {
+      "start_point": 143,
+      "end_point": 144,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 150
+    },
+    {
+      "start_point": 144,
+      "end_point": 145,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 151
+    },
+    {
+      "start_point": 145,
+      "end_point": 146,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 152
+    },
+    {
+      "start_point": 146,
+      "end_point": 147,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 153
+    },
+    {
+      "start_point": 147,
+      "end_point": 148,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 154
+    },
+    {
+      "start_point": 148,
+      "end_point": 151,
+      "speed": 3500,
+      "length": 2887,
+      "travel_time": 0.8248571428571428,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 155
+    },
+    {
+      "start_point": 151,
+      "end_point": 104,
+      "speed": 700,
+      "length": 1000,
+      "travel_time": 1.4285714285714286,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 1,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 158
+    },
+    {
+      "start_point": 105,
+      "end_point": 63,
+      "speed": 500,
+      "length": 2595,
+      "travel_time": 5.19,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 159
+    },
+    {
+      "start_point": 68,
+      "end_point": 22,
+      "speed": 500,
+      "length": 2377,
+      "travel_time": 4.754,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 160
+    },
+    {
+      "start_point": 20,
+      "end_point": 46,
+      "speed": 500,
+      "length": 2821,
+      "travel_time": 5.642,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 161
+    },
+    {
+      "start_point": 61,
+      "end_point": 107,
+      "speed": 500,
+      "length": 2513,
+      "travel_time": 5.026,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 162
+    },
+    {
+      "start_point": 110,
+      "end_point": 89,
+      "speed": 500,
+      "length": 2686,
+      "travel_time": 5.372,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q1",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 163
+    },
+    {
+      "start_point": 100,
+      "end_point": 19,
+      "speed": 500,
+      "length": 2695,
+      "travel_time": 5.39,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q2",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 164
+    },
+    {
+      "start_point": 17,
+      "end_point": 76,
+      "speed": 500,
+      "length": 2685,
+      "travel_time": 5.37,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q3",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 165
+    },
+    {
+      "start_point": 87,
+      "end_point": 112,
+      "speed": 500,
+      "length": 2696,
+      "travel_time": 5.392,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        },
+        {
+          "type": "90",
+          "location": "Q4",
+          "direction": "COUNTER_CLOCK"
+        },
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 2,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 166
+    },
+    {
+      "start_point": 125,
+      "end_point": 127,
+      "speed": 3500,
+      "length": 2000,
+      "travel_time": 0.5714285714285714,
+      "seg_parts": [
+        {
+          "type": "STRAIGHT"
+        }
+      ],
+      "steer_dir": 0,
+      "speed_ratio": 100,
+      "ob_low": "",
+      "ob_high": "",
+      "ob_dist": "",
+      "unuse": false,
+      "id": 167
+    }
+  ],
+  "stations": [
+    {
+      "point_id": 4,
+      "direction": "U",
+      "offset": 1224,
+      "next_point": 7,
+      "logical_id": "FIO01_Out",
+      "id": 1
+    },
+    {
+      "point_id": 4,
+      "direction": "U",
+      "offset": 1874,
+      "next_point": 7,
+      "logical_id": "FIO01_In",
+      "id": 2
+    },
+    {
+      "point_id": 9,
+      "direction": "U",
+      "offset": 1775,
+      "next_point": 11,
+      "logical_id": "S3",
+      "id": 3
+    },
+    {
+      "point_id": 11,
+      "direction": "U",
+      "offset": 524,
+      "next_point": 13,
+      "logical_id": "S4",
+      "id": 4
+    },
+    {
+      "point_id": 15,
+      "direction": "U",
+      "offset": 895,
+      "next_point": 17,
+      "logical_id": "S5",
+      "id": 5
+    },
+    {
+      "point_id": 42,
+      "direction": "U",
+      "offset": 689,
+      "next_point": 45,
+      "logical_id": "FIO02_Out",
+      "id": 6
+    },
+    {
+      "point_id": 42,
+      "direction": "U",
+      "offset": 1339,
+      "next_point": 45,
+      "logical_id": "FIO02_In",
+      "id": 7
+    },
+    {
+      "point_id": 49,
+      "direction": "U",
+      "offset": 566,
+      "next_point": 53,
+      "logical_id": "S8",
+      "id": 8
+    },
+    {
+      "point_id": 54,
+      "direction": "U",
+      "offset": 1464,
+      "next_point": 61,
+      "logical_id": "S9",
+      "id": 9
+    },
+    {
+      "point_id": 64,
+      "direction": "U",
+      "offset": 0,
+      "next_point": 71,
+      "logical_id": "S10",
+      "id": 10
+    },
+    {
+      "point_id": 66,
+      "direction": "U",
+      "offset": 0,
+      "next_point": 68,
+      "logical_id": "S11",
+      "id": 11
+    },
+    {
+      "point_id": 79,
+      "direction": "U",
+      "offset": 566,
+      "next_point": 83,
+      "logical_id": "S12",
+      "id": 12
+    },
+    {
+      "point_id": 84,
+      "direction": "U",
+      "offset": 916,
+      "next_point": 87,
+      "logical_id": "S13",
+      "id": 13
+    },
+    {
+      "point_id": 92,
+      "direction": "U",
+      "offset": 715,
+      "next_point": 96,
+      "logical_id": "S14",
+      "id": 14
+    },
+    {
+      "point_id": 97,
+      "direction": "U",
+      "offset": 1065,
+      "next_point": 100,
+      "logical_id": "S15",
+      "id": 15
+    },
+    {
+      "point_id": 112,
+      "direction": "U",
+      "offset": 736,
+      "next_point": 114,
+      "logical_id": "S16",
+      "id": 16
+    },
+    {
+      "point_id": 114,
+      "direction": "U",
+      "offset": 865,
+      "next_point": 116,
+      "logical_id": "S17",
+      "id": 17
+    },
+    {
+      "point_id": 130,
+      "direction": "U",
+      "offset": 214,
+      "next_point": 133,
+      "logical_id": "S18",
+      "id": 18
+    },
+    {
+      "point_id": 130,
+      "direction": "U",
+      "offset": 719,
+      "next_point": 133,
+      "logical_id": "S19",
+      "id": 19
+    },
+    {
+      "point_id": 148,
+      "direction": "U",
+      "offset": 1214,
+      "next_point": 151,
+      "logical_id": "S20",
+      "id": 20
+    },
+    {
+      "point_id": 148,
+      "direction": "U",
+      "offset": 1719,
+      "next_point": 151,
+      "logical_id": "S21",
+      "id": 21
+    }
+  ],
+  "buffers": [
+    {
+      "point_id": 46,
+      "direction": "R",
+      "offset": 241,
+      "next_point": 49,
+      "logical_id": "B1",
+      "id": 1
+    },
+    {
+      "point_id": 46,
+      "direction": "L",
+      "offset": 241,
+      "next_point": 49,
+      "logical_id": "B2",
+      "id": 2
+    },
+    {
+      "point_id": 46,
+      "direction": "R",
+      "offset": 691,
+      "next_point": 49,
+      "logical_id": "B3",
+      "id": 3
+    },
+    {
+      "point_id": 46,
+      "direction": "L",
+      "offset": 691,
+      "next_point": 49,
+      "logical_id": "B4",
+      "id": 4
+    },
+    {
+      "point_id": 49,
+      "direction": "R",
+      "offset": 243,
+      "next_point": 53,
+      "logical_id": "B5",
+      "id": 5
+    },
+    {
+      "point_id": 49,
+      "direction": "L",
+      "offset": 243,
+      "next_point": 53,
+      "logical_id": "B6",
+      "id": 6
+    },
+    {
+      "point_id": 49,
+      "direction": "R",
+      "offset": 693,
+      "next_point": 53,
+      "logical_id": "B7",
+      "id": 7
+    },
+    {
+      "point_id": 49,
+      "direction": "L",
+      "offset": 693,
+      "next_point": 53,
+      "logical_id": "B8",
+      "id": 8
+    },
+    {
+      "point_id": 54,
+      "direction": "R",
+      "offset": 241,
+      "next_point": 61,
+      "logical_id": "B9",
+      "id": 9
+    },
+    {
+      "point_id": 54,
+      "direction": "L",
+      "offset": 241,
+      "next_point": 61,
+      "logical_id": "B10",
+      "id": 10
+    },
+    {
+      "point_id": 54,
+      "direction": "R",
+      "offset": 691,
+      "next_point": 61,
+      "logical_id": "B11",
+      "id": 11
+    },
+    {
+      "point_id": 54,
+      "direction": "L",
+      "offset": 691,
+      "next_point": 61,
+      "logical_id": "B12",
+      "id": 12
+    },
+    {
+      "point_id": 54,
+      "direction": "R",
+      "offset": 1141,
+      "next_point": 61,
+      "logical_id": "B13",
+      "id": 13
+    },
+    {
+      "point_id": 54,
+      "direction": "L",
+      "offset": 1141,
+      "next_point": 61,
+      "logical_id": "B14",
+      "id": 14
+    },
+    {
+      "point_id": 54,
+      "direction": "R",
+      "offset": 1591,
+      "next_point": 61,
+      "logical_id": "B15",
+      "id": 15
+    },
+    {
+      "point_id": 54,
+      "direction": "L",
+      "offset": 1591,
+      "next_point": 61,
+      "logical_id": "B16",
+      "id": 16
+    },
+    {
+      "point_id": 76,
+      "direction": "R",
+      "offset": 316,
+      "next_point": 79,
+      "logical_id": "B17",
+      "id": 17
+    },
+    {
+      "point_id": 76,
+      "direction": "L",
+      "offset": 316,
+      "next_point": 79,
+      "logical_id": "B18",
+      "id": 18
+    },
+    {
+      "point_id": 76,
+      "direction": "R",
+      "offset": 766,
+      "next_point": 79,
+      "logical_id": "B19",
+      "id": 19
+    },
+    {
+      "point_id": 76,
+      "direction": "L",
+      "offset": 766,
+      "next_point": 79,
+      "logical_id": "B20",
+      "id": 20
+    },
+    {
+      "point_id": 79,
+      "direction": "R",
+      "offset": 318,
+      "next_point": 83,
+      "logical_id": "B21",
+      "id": 21
+    },
+    {
+      "point_id": 79,
+      "direction": "L",
+      "offset": 318,
+      "next_point": 83,
+      "logical_id": "B22",
+      "id": 22
+    },
+    {
+      "point_id": 79,
+      "direction": "R",
+      "offset": 768,
+      "next_point": 83,
+      "logical_id": "B23",
+      "id": 23
+    },
+    {
+      "point_id": 79,
+      "direction": "L",
+      "offset": 768,
+      "next_point": 83,
+      "logical_id": "B24",
+      "id": 24
+    },
+    {
+      "point_id": 89,
+      "direction": "R",
+      "offset": 391,
+      "next_point": 92,
+      "logical_id": "B25",
+      "id": 25
+    },
+    {
+      "point_id": 89,
+      "direction": "L",
+      "offset": 391,
+      "next_point": 92,
+      "logical_id": "B26",
+      "id": 26
+    },
+    {
+      "point_id": 89,
+      "direction": "R",
+      "offset": 841,
+      "next_point": 92,
+      "logical_id": "B27",
+      "id": 27
+    },
+    {
+      "point_id": 89,
+      "direction": "L",
+      "offset": 841,
+      "next_point": 92,
+      "logical_id": "B28",
+      "id": 28
+    },
+    {
+      "point_id": 92,
+      "direction": "R",
+      "offset": 392,
+      "next_point": 96,
+      "logical_id": "B29",
+      "id": 29
+    },
+    {
+      "point_id": 92,
+      "direction": "L",
+      "offset": 392,
+      "next_point": 96,
+      "logical_id": "B30",
+      "id": 30
+    },
+    {
+      "point_id": 92,
+      "direction": "R",
+      "offset": 842,
+      "next_point": 96,
+      "logical_id": "B31",
+      "id": 31
+    },
+    {
+      "point_id": 92,
+      "direction": "L",
+      "offset": 842,
+      "next_point": 96,
+      "logical_id": "B32",
+      "id": 32
+    }
+  ],
+  "mtls": [],
+  "clusters": [
+    {
+      "max_vehicles": 5,
+      "segments": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        44,
+        45,
+        46,
+        47
+      ],
+      "color": "color9",
+      "speed_ratio": 100,
+      "failover": false,
+      "logical_id": "Cluster1",
+      "id": 1
+    },
+    {
+      "max_vehicles": 6,
+      "segments": [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        121,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        134,
+        135,
+        136,
+        137,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        158,
+        167
+      ],
+      "color": "color12",
+      "speed_ratio": 100,
+      "failover": false,
+      "logical_id": "Cluster2",
+      "id": 2
+    },
+    {
+      "max_vehicles": 4,
+      "segments": [
+        48,
+        51,
+        55,
+        56,
+        63,
+        64,
+        65,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        159,
+        160,
+        161,
+        162
+      ],
+      "color": "color17",
+      "speed_ratio": 100,
+      "failover": false,
+      "logical_id": "Cluster3",
+      "id": 3
+    },
+    {
+      "max_vehicles": 3,
+      "segments": [
+        81,
+        84,
+        88,
+        89,
+        92,
+        93,
+        94,
+        97,
+        101,
+        102,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        163,
+        164,
+        165,
+        166
+      ],
+      "color": "color23",
+      "speed_ratio": 100,
+      "failover": false,
+      "logical_id": "Cluster4",
+      "id": 4
+    }
+  ],
+  "groups": [],
+  "vehicledioset": {
+    "categories": [
+      "Disable",
+      "Transfer",
+      "OBS",
+      "ZCU",
+      "PIO",
+      "OTHER"
+    ],
+    "vehicledi": [
+      {
+        "id": 0,
+        "category": "Disable",
+        "name": "Antidrop_Front_0"
+      },
+      {
+        "id": 1,
+        "category": "Disable",
+        "name": "Antidrop_Front_1"
+      },
+      {
+        "id": 2,
+        "category": "Disable",
+        "name": "Antidrop_Rear_0"
+      },
+      {
+        "id": 3,
+        "category": "Disable",
+        "name": "Antidrop_Rear_1"
+      },
+      {
+        "id": 4,
+        "category": "Disable",
+        "name": "UBG_Detect_1"
+      },
+      {
+        "id": 5,
+        "category": "Disable",
+        "name": "UBG_Detect_2"
+      },
+      {
+        "id": 6,
+        "category": "Disable",
+        "name": "UBG_Detect_3"
+      },
+      {
+        "id": 7,
+        "category": "Disable",
+        "name": "UBG_Alarm"
+      },
+      {
+        "id": 8,
+        "category": "Disable",
+        "name": "PBS_Detect_1"
+      },
+      {
+        "id": 9,
+        "category": "Disable",
+        "name": "PBS_Detect_2"
+      },
+      {
+        "id": 10,
+        "category": "Disable",
+        "name": "PBS_Detect_3"
+      },
+      {
+        "id": 11,
+        "category": "Disable",
+        "name": "PBS_Alarm"
+      },
+      {
+        "id": 12,
+        "category": "Disable",
+        "name": "DIN_12"
+      },
+      {
+        "id": 13,
+        "category": "Disable",
+        "name": "DIN_13"
+      },
+      {
+        "id": 14,
+        "category": "Disable",
+        "name": "DIN_14"
+      },
+      {
+        "id": 15,
+        "category": "Disable",
+        "name": "HAND_PIO_9_PIO_GO"
+      },
+      {
+        "id": 16,
+        "category": "Disable",
+        "name": "HAND_PIO_1_Grip"
+      },
+      {
+        "id": 17,
+        "category": "Disable",
+        "name": "HAND_PIO_2_Ungrip"
+      },
+      {
+        "id": 18,
+        "category": "Disable",
+        "name": "HAND_PIO_3_Left_Flange_Sensor"
+      },
+      {
+        "id": 19,
+        "category": "Disable",
+        "name": "HAND_PIO_4_Right_Flange_Sensor"
+      },
+      {
+        "id": 20,
+        "category": "Disable",
+        "name": "HAND_PIO_5_Carrier_Pusher_Sensor"
+      },
+      {
+        "id": 21,
+        "category": "Disable",
+        "name": "HAND_PIO_6_Hoist_Home"
+      },
+      {
+        "id": 22,
+        "category": "Disable",
+        "name": "HAND_PIO_7"
+      },
+      {
+        "id": 23,
+        "category": "Disable",
+        "name": "HAND_PIO_8"
+      },
+      {
+        "id": 24,
+        "category": "Disable",
+        "name": "Steer_Front_Left_SOL_1_1"
+      },
+      {
+        "id": 25,
+        "category": "Disable",
+        "name": "Steer_Front_Right_SOL_1_1"
+      },
+      {
+        "id": 26,
+        "category": "Disable",
+        "name": "Steer_Rear_Left_SOL_2_1"
+      },
+      {
+        "id": 27,
+        "category": "Disable",
+        "name": "Steer_Rear_Right_SOL_2_1"
+      },
+      {
+        "id": 28,
+        "category": "Disable",
+        "name": "DIN_28"
+      },
+      {
+        "id": 29,
+        "category": "Disable",
+        "name": "DIN_29"
+      },
+      {
+        "id": 30,
+        "category": "Disable",
+        "name": "DIN_30"
+      },
+      {
+        "id": 31,
+        "category": "Disable",
+        "name": "DIN_31"
+      },
+      {
+        "id": 32,
+        "category": "Disable",
+        "name": "System_Stoptag_Sensor"
+      },
+      {
+        "id": 33,
+        "category": "Disable",
+        "name": "DIN_33"
+      },
+      {
+        "id": 34,
+        "category": "Disable",
+        "name": "Trans_DecTag_Sensor"
+      },
+      {
+        "id": 35,
+        "category": "Disable",
+        "name": "Trans_Stoptag_Sensor"
+      },
+      {
+        "id": 36,
+        "category": "Disable",
+        "name": "EMO_SW"
+      },
+      {
+        "id": 37,
+        "category": "Disable",
+        "name": "DIN_37"
+      },
+      {
+        "id": 38,
+        "category": "Disable",
+        "name": "DIN_38"
+      },
+      {
+        "id": 39,
+        "category": "Disable",
+        "name": "UTB_Detect"
+      },
+      {
+        "id": 40,
+        "category": "Disable",
+        "name": "Foup_Detect"
+      },
+      {
+        "id": 41,
+        "category": "Disable",
+        "name": "DIN_41"
+      },
+      {
+        "id": 42,
+        "category": "Disable",
+        "name": "Bumper"
+      },
+      {
+        "id": 43,
+        "category": "Disable",
+        "name": "Oscillation_Sensor"
+      },
+      {
+        "id": 44,
+        "category": "Disable",
+        "name": "Belt_Detect"
+      },
+      {
+        "id": 45,
+        "category": "Disable",
+        "name": "DIN_45"
+      },
+      {
+        "id": 46,
+        "category": "Disable",
+        "name": "DIN_46"
+      },
+      {
+        "id": 47,
+        "category": "Disable",
+        "name": "DIN_47"
+      },
+      {
+        "id": 48,
+        "category": "Disable",
+        "name": "DIN_48"
+      },
+      {
+        "id": 49,
+        "category": "Disable",
+        "name": "DIN_49"
+      },
+      {
+        "id": 50,
+        "category": "Disable",
+        "name": "SMPS_HID_Fault"
+      },
+      {
+        "id": 51,
+        "category": "Disable",
+        "name": "Fan_Fai"
+      },
+      {
+        "id": 52,
+        "category": "Disable",
+        "name": "AntiDrop_Front_Lock_step__1_1_1"
+      },
+      {
+        "id": 53,
+        "category": "Disable",
+        "name": "AntiDrop_Front_UnLock_step__1_1_3"
+      },
+      {
+        "id": 54,
+        "category": "Disable",
+        "name": "AntiDrop_Rear_Lock_step_2_1_1"
+      },
+      {
+        "id": 55,
+        "category": "Disable",
+        "name": "AntiDrop_Rear_UnLock_step_2_1_3"
+      },
+      {
+        "id": 56,
+        "category": "Disable",
+        "name": "DIN_56"
+      },
+      {
+        "id": 57,
+        "category": "Disable",
+        "name": "DIN_57"
+      },
+      {
+        "id": 58,
+        "category": "Disable",
+        "name": "DIN_58"
+      },
+      {
+        "id": 59,
+        "category": "Disable",
+        "name": "SPARE_01"
+      },
+      {
+        "id": 60,
+        "category": "Disable",
+        "name": "SPARE_02"
+      },
+      {
+        "id": 61,
+        "category": "Disable",
+        "name": "DIN_61"
+      },
+      {
+        "id": 62,
+        "category": "Disable",
+        "name": "SPARE_04"
+      },
+      {
+        "id": 63,
+        "category": "Disable",
+        "name": "DIN_63"
+      },
+      {
+        "id": 64,
+        "category": "Disable",
+        "name": "EQ_PIO_1_L_REQ"
+      },
+      {
+        "id": 65,
+        "category": "Disable",
+        "name": "EQ_PIO_2_U_REQ"
+      },
+      {
+        "id": 66,
+        "category": "Disable",
+        "name": "EQ_PIO_3__"
+      },
+      {
+        "id": 67,
+        "category": "Disable",
+        "name": "EQ_PIO_4_READY"
+      },
+      {
+        "id": 68,
+        "category": "Disable",
+        "name": "EQ_PIO_5__"
+      },
+      {
+        "id": 69,
+        "category": "Disable",
+        "name": "EQ_PIO_6_HO_AVBL"
+      },
+      {
+        "id": 70,
+        "category": "Disable",
+        "name": "EQ_PIO_7_ES"
+      },
+      {
+        "id": 71,
+        "category": "Disable",
+        "name": "EQ_PIO_9_PIO_GO"
+      }
+    ],
+    "vehicledo": [
+      {
+        "id": 0,
+        "category": "Disable",
+        "name": "Antidrop_Front_Action"
+      },
+      {
+        "id": 1,
+        "category": "Disable",
+        "name": "Antidrop_Front_Direction"
+      },
+      {
+        "id": 2,
+        "category": "Disable",
+        "name": "Antidrop_Rear_Action"
+      },
+      {
+        "id": 3,
+        "category": "Disable",
+        "name": "Antidrop_Rear_Direction"
+      },
+      {
+        "id": 4,
+        "category": "Disable",
+        "name": "UBG_Area_1"
+      },
+      {
+        "id": 5,
+        "category": "Disable",
+        "name": "UBG_Area_2"
+      },
+      {
+        "id": 6,
+        "category": "Disable",
+        "name": "UBG_Area_3"
+      },
+      {
+        "id": 7,
+        "category": "Disable",
+        "name": "UBG_Area_4"
+      },
+      {
+        "id": 8,
+        "category": "Disable",
+        "name": "PBS_Area_1"
+      },
+      {
+        "id": 9,
+        "category": "Disable",
+        "name": "PBS_Area_2"
+      },
+      {
+        "id": 10,
+        "category": "Disable",
+        "name": "PBS_Area_3"
+      },
+      {
+        "id": 11,
+        "category": "Disable",
+        "name": "PBS_Area_4"
+      },
+      {
+        "id": 12,
+        "category": "Disable",
+        "name": "DOUT_12"
+      },
+      {
+        "id": 13,
+        "category": "Disable",
+        "name": "DOUT_13"
+      },
+      {
+        "id": 14,
+        "category": "Disable",
+        "name": "DOUT_14"
+      },
+      {
+        "id": 15,
+        "category": "Disable",
+        "name": "HAND_PIO_9_Selelct"
+      },
+      {
+        "id": 16,
+        "category": "Disable",
+        "name": "HAND_PIO_1_Grip"
+      },
+      {
+        "id": 17,
+        "category": "Disable",
+        "name": "HAND_PIO_2_Ungrip"
+      },
+      {
+        "id": 18,
+        "category": "Disable",
+        "name": "HAND_PIO_3"
+      },
+      {
+        "id": 19,
+        "category": "Disable",
+        "name": "HAND_PIO_4"
+      },
+      {
+        "id": 20,
+        "category": "Disable",
+        "name": "HAND_PIO_5"
+      },
+      {
+        "id": 21,
+        "category": "Disable",
+        "name": "HAND_PIO_6"
+      },
+      {
+        "id": 22,
+        "category": "Disable",
+        "name": "HAND_PIO_7"
+      },
+      {
+        "id": 23,
+        "category": "Disable",
+        "name": "HAND_PIO_8"
+      },
+      {
+        "id": 24,
+        "category": "Disable",
+        "name": "Steer_Front_Left_SOL__1_1_1"
+      },
+      {
+        "id": 25,
+        "category": "Disable",
+        "name": "Steer_Front_Right_SOL__1_1_3"
+      },
+      {
+        "id": 26,
+        "category": "Disable",
+        "name": "Steer_Front_Left_TOWING__1_1_1"
+      },
+      {
+        "id": 27,
+        "category": "Disable",
+        "name": "Steer_Front_Right_TOWING__1_1_3"
+      },
+      {
+        "id": 28,
+        "category": "Disable",
+        "name": "Steer_Rear_Right_SOL__2_1_1"
+      },
+      {
+        "id": 29,
+        "category": "Disable",
+        "name": "Steer_Rear_Left_SOL__2_1_3"
+      },
+      {
+        "id": 30,
+        "category": "Disable",
+        "name": "Steer_Rear_Left_TOWING__2_1_1"
+      },
+      {
+        "id": 31,
+        "category": "Disable",
+        "name": "Steer_Rear_Right_TOWING__2_1_3"
+      },
+      {
+        "id": 32,
+        "category": "Disable",
+        "name": "Release_Brake_Driver"
+      },
+      {
+        "id": 33,
+        "category": "Disable",
+        "name": "Release_Brake_Hoist"
+      },
+      {
+        "id": 34,
+        "category": "Disable",
+        "name": "LED_LAMP__1_RED"
+      },
+      {
+        "id": 35,
+        "category": "Disable",
+        "name": "LED_LAMP__2_GREEN"
+      },
+      {
+        "id": 36,
+        "category": "Disable",
+        "name": "LED_LAMP__3_BLUE"
+      },
+      {
+        "id": 37,
+        "category": "Disable",
+        "name": "BUZZER__1"
+      },
+      {
+        "id": 38,
+        "category": "Disable",
+        "name": "BUZZER__2"
+      },
+      {
+        "id": 39,
+        "category": "Disable",
+        "name": "BUZZER__3"
+      },
+      {
+        "id": 40,
+        "category": "Disable",
+        "name": "BUZZER__4"
+      },
+      {
+        "id": 41,
+        "category": "Disable",
+        "name": "MAIN_MC"
+      },
+      {
+        "id": 42,
+        "category": "Disable",
+        "name": "SAFETY_RESET"
+      },
+      {
+        "id": 43,
+        "category": "Disable",
+        "name": "TOWING_VHL_RELAY_1"
+      },
+      {
+        "id": 44,
+        "category": "Disable",
+        "name": "SPARE__2"
+      },
+      {
+        "id": 45,
+        "category": "Disable",
+        "name": "SPARE__3"
+      },
+      {
+        "id": 46,
+        "category": "Disable",
+        "name": "SPARE__4"
+      },
+      {
+        "id": 47,
+        "category": "Disable",
+        "name": "DOUT_47"
+      },
+      {
+        "id": 48,
+        "category": "Disable",
+        "name": "DOUT_48"
+      },
+      {
+        "id": 49,
+        "category": "Disable",
+        "name": "DOUT_49"
+      },
+      {
+        "id": 50,
+        "category": "Disable",
+        "name": "DOUT_50"
+      },
+      {
+        "id": 51,
+        "category": "Disable",
+        "name": "DOUT_51"
+      },
+      {
+        "id": 52,
+        "category": "Disable",
+        "name": "DOUT_52"
+      },
+      {
+        "id": 53,
+        "category": "Disable",
+        "name": "DOUT_53"
+      },
+      {
+        "id": 54,
+        "category": "Disable",
+        "name": "DOUT_54"
+      },
+      {
+        "id": 55,
+        "category": "Disable",
+        "name": "DOUT_55"
+      },
+      {
+        "id": 56,
+        "category": "Disable",
+        "name": "DOUT_56"
+      },
+      {
+        "id": 57,
+        "category": "Disable",
+        "name": "DOUT_57"
+      },
+      {
+        "id": 58,
+        "category": "Disable",
+        "name": "DOUT_58"
+      },
+      {
+        "id": 59,
+        "category": "Disable",
+        "name": "DOUT_59"
+      },
+      {
+        "id": 60,
+        "category": "Disable",
+        "name": "DOUT_60"
+      },
+      {
+        "id": 61,
+        "category": "Disable",
+        "name": "DOUT_61"
+      },
+      {
+        "id": 62,
+        "category": "Disable",
+        "name": "DOUT_62"
+      },
+      {
+        "id": 63,
+        "category": "Disable",
+        "name": "DOUT_63"
+      },
+      {
+        "id": 64,
+        "category": "Disable",
+        "name": "EQ_PIO_1_VALID"
+      },
+      {
+        "id": 65,
+        "category": "Disable",
+        "name": "EQ_PIO_2_CS"
+      },
+      {
+        "id": 66,
+        "category": "Disable",
+        "name": "EQ_PIO_3__"
+      },
+      {
+        "id": 67,
+        "category": "Disable",
+        "name": "EQ_PIO_4__"
+      },
+      {
+        "id": 68,
+        "category": "Disable",
+        "name": "EQ_PIO_5_TR_REQ"
+      },
+      {
+        "id": 69,
+        "category": "Disable",
+        "name": "EQ_PIO_6_BUSY"
+      },
+      {
+        "id": 70,
+        "category": "Disable",
+        "name": "EQ_PIO_7_COMPT"
+      },
+      {
+        "id": 71,
+        "category": "Disable",
+        "name": "EQ_PIO_9_PIO_SELECT"
+      }
+    ]
+  },
+  "alarms": [],
+  "zcus": [
+    {
+      "x": 2800,
+      "y": 36700,
+      "using_type": 2,
+      "zcu_type": 1,
+      "input_zones": [
+        {
+          "priority_point": 7,
+          "zone_points": [
+            4,
+            7
+          ]
+        },
+        {
+          "priority_point": 31,
+          "zone_points": [
+            30,
+            31
+          ]
+        }
+      ],
+      "complete_points": [
+        8
+      ],
+      "id": 1
+    },
+    {
+      "x": 5400,
+      "y": 32200,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 17,
+          "zone_points": [
+            15,
+            17
+          ]
+        },
+        {
+          "priority_point": 101,
+          "zone_points": [
+            101
+          ]
+        }
+      ],
+      "complete_points": [
+        76
+      ],
+      "id": 2
+    },
+    {
+      "x": 4500,
+      "y": 36700,
+      "using_type": 2,
+      "zcu_type": 1,
+      "input_zones": [
+        {
+          "priority_point": 39,
+          "zone_points": [
+            38,
+            39
+          ]
+        },
+        {
+          "priority_point": 19,
+          "zone_points": [
+            19
+          ]
+        }
+      ],
+      "complete_points": [
+        40
+      ],
+      "id": 3
+    },
+    {
+      "x": 11200,
+      "y": 32400,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 83,
+          "zone_points": [
+            76,
+            79,
+            83
+          ]
+        },
+        {
+          "priority_point": 103,
+          "zone_points": [
+            103
+          ]
+        }
+      ],
+      "complete_points": [
+        84
+      ],
+      "id": 4
+    },
+    {
+      "x": 16800,
+      "y": 32400,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 87,
+          "zone_points": [
+            84,
+            87
+          ]
+        },
+        {
+          "priority_point": 111,
+          "zone_points": [
+            111
+          ]
+        }
+      ],
+      "complete_points": [
+        112
+      ],
+      "id": 5
+    },
+    {
+      "x": 5300,
+      "y": 39900,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 20,
+          "zone_points": [
+            20
+          ]
+        },
+        {
+          "priority_point": 69,
+          "zone_points": [
+            69
+          ]
+        }
+      ],
+      "complete_points": [
+        46
+      ],
+      "id": 6
+    },
+    {
+      "x": 7700,
+      "y": 41500,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 75,
+          "zone_points": [
+            63,
+            72,
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "priority_point": 66,
+          "zone_points": [
+            66
+          ]
+        }
+      ],
+      "complete_points": [
+        68
+      ],
+      "id": 7
+    },
+    {
+      "x": 11200,
+      "y": 40000,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 71,
+          "zone_points": [
+            71
+          ]
+        },
+        {
+          "priority_point": 53,
+          "zone_points": [
+            46,
+            49,
+            53
+          ]
+        }
+      ],
+      "complete_points": [
+        54
+      ],
+      "id": 8
+    },
+    {
+      "x": 16800,
+      "y": 40000,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 62,
+          "zone_points": [
+            62
+          ]
+        },
+        {
+          "priority_point": 105,
+          "zone_points": [
+            151,
+            104,
+            105
+          ]
+        }
+      ],
+      "complete_points": [
+        63
+      ],
+      "id": 9
+    },
+    {
+      "x": 5300,
+      "y": 40500,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 21,
+          "zone_points": [
+            21
+          ]
+        },
+        {
+          "priority_point": 68,
+          "zone_points": [
+            68
+          ]
+        }
+      ],
+      "complete_points": [
+        22
+      ],
+      "id": 10
+    },
+    {
+      "x": 11200,
+      "y": 40400,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 70,
+          "zone_points": [
+            70
+          ]
+        },
+        {
+          "priority_point": 64,
+          "zone_points": [
+            63,
+            64
+          ]
+        }
+      ],
+      "complete_points": [
+        66
+      ],
+      "id": 11
+    },
+    {
+      "x": 16800,
+      "y": 39600,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 106,
+          "zone_points": [
+            106
+          ]
+        },
+        {
+          "priority_point": 61,
+          "zone_points": [
+            54,
+            61
+          ]
+        }
+      ],
+      "complete_points": [
+        107
+      ],
+      "id": 12
+    },
+    {
+      "x": 5200,
+      "y": 33200,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 100,
+          "zone_points": [
+            97,
+            100
+          ]
+        },
+        {
+          "priority_point": 18,
+          "zone_points": [
+            18
+          ]
+        }
+      ],
+      "complete_points": [
+        19
+      ],
+      "id": 13
+    },
+    {
+      "x": 11200,
+      "y": 32800,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 102,
+          "zone_points": [
+            102
+          ]
+        },
+        {
+          "priority_point": 96,
+          "zone_points": [
+            89,
+            92,
+            96
+          ]
+        }
+      ],
+      "complete_points": [
+        97
+      ],
+      "id": 14
+    },
+    {
+      "x": 16800,
+      "y": 33200,
+      "using_type": 2,
+      "zcu_type": 0,
+      "input_zones": [
+        {
+          "priority_point": 110,
+          "zone_points": [
+            108,
+            109,
+            110
+          ]
+        },
+        {
+          "priority_point": 88,
+          "zone_points": [
+            88
+          ]
+        }
+      ],
+      "complete_points": [
+        89
+      ],
+      "id": 15
+    }
+  ]
+}

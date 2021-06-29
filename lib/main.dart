@@ -3,7 +3,6 @@ import 'package:anomaly_detection_ui/src/providers/MQTTProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/services.dart';
-
 import 'models/MapData.dart';
 void main(){
   runApp(MyApp());
@@ -19,7 +18,7 @@ void main(){
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    loadJsonData().then((value) => (value.segments.forEach((element) {print(element.id);})));
+    loadJsonData().then((value) => print(value.segments.length));
     //DataCollectManager().turnToCSV();
     return MQTTProvider();
   }
