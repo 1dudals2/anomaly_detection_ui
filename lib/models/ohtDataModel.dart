@@ -14,6 +14,7 @@ class OhtDataModel{
   final double drive_right_torque;
   final double fork_lift_speed;
   final double fork_lift_torque;
+  final bool isNormal;
 
   OhtDataModel(
       this.vehicle_id,
@@ -29,7 +30,9 @@ class OhtDataModel{
       this.fork_lift_speed,
       this.fork_lift_torque,
       this.event_label ,
-      this.yaw,);
+      this.yaw,
+      this.isNormal,
+      );
 
   OhtDataModel.fromJson(Map<String, dynamic> json)
       : vehicle_id = json['vehicle_id'],
@@ -45,7 +48,9 @@ class OhtDataModel{
         drive_right_torque = json['drive_right_torque'],
         fork_lift_torque = json['fork_lift_torque'],
         fork_lift_speed = json['fork_lift_speed'],
-        yaw = json['yaw'];
+        yaw = json['yaw'],
+        isNormal = json['accx_rms'] == 10 ? false: true
+  ;
 
   Map<String, dynamic> toJson() =>{
     'vehicle_id' : vehicle_id,

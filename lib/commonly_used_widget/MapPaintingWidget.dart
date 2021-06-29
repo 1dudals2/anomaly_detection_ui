@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 double containerWidth = 400;
 double containerHeight = 400;
-double scaleFactorForWidget = 0.003;
+double scaleFactorForWidget = 0.009;
 
 class MapPaintingWidget extends StatefulWidget {
   const MapPaintingWidget({Key? key}) : super(key: key);
@@ -81,6 +81,10 @@ class OpenPainter extends CustomPainter{
       Offset(7122, -39010),
       paint
     );
+    drawingManager.drawCurveClock(
+        Offset(15065, -39010),
+        Offset(17202, -37687),
+        paint);
   }
 
   @override

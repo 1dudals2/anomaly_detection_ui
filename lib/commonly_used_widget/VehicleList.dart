@@ -24,7 +24,7 @@ class _VehicleListState extends State<VehicleList> {
       mqttInitialized = true;
     }
     if(mqttModel.ohtDatas[mqttModel.currentVehicleId] != null){
-      //print(mqttModel.ohtDatas[mqttModel.currentVehicleId]!.first.vehicle_id);
+      //print(mqttModel.ohtDatas[mqttModel.currentVehicleId]!.first.isNormal);
     }
     int? numberOfVehicles = 0;
     if( mqttModel.ohtDatas[mqttModel.currentVehicleId] != null && mqttModel.ohtDatas[mqttModel.currentVehicleId]!.isNotEmpty && mqttModel. ohtDatas["01"]?.last?.num_of_vehicles != null)

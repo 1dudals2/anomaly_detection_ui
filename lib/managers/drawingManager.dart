@@ -143,5 +143,8 @@ class DrawingManager{
         endPoint,
         paint);
   }
+  void drawFromJson(){
+
+  }
 }
 

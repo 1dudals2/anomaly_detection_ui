@@ -1,7 +1,8 @@
+import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:provider/provider.dart';
 class VehicleChartPage extends StatefulWidget {
   const VehicleChartPage({Key? key}) : super(key: key);
 
@@ -14,6 +15,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width -300;
     double height = (MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight)*0.5;
+    MQTTModel mqttModel = context.watch<MQTTModel>();
     return Container(
       width: width,
       height: height,
@@ -112,8 +114,9 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                   height: 300,
                   child: ListView.builder(
                       shrinkWrap: true,
-                      itemCount: 13,
+                      itemCount: mqttModel.anomalDatas.length,
                       itemBuilder: (BuildContext context, int index){
+                        String currentKey = mqttModel.anomalDatas.keys.elementAt(index);
                         return Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -127,7 +130,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                                       right:  BorderSide(width: 2,color: Colors.grey),
                                     )
                                 ),
-                                child: Text('adf')
+                                child: Text(mqttModel.anomalDatas[currentKey]!.first.anomal_timestamp)
                             ),
                             Container(
                                 height: 70,
@@ -138,7 +141,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                                       right:  BorderSide(width: 2,color: Colors.grey),
                                     )
                                 ),
-                                child: Text('adf')
+                                child: Text(currentKey)
                             ),
                             Container(
                                 height: 70,
@@ -168,25 +171,32 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                                 decoration: BoxDecoration(
                                     border: Border(
 
-                                      bottom: BorderSide(width: 2,color: Colors.grey),
-                                      right:  BorderSide(width: 2,color: Colors.grey),
-                                    )
-                                ),
-                                child: Text('adf')
-                            ),
-                          ],
-                        );
-                      }
-                  ),
-                )
+                                              bottom: BorderSide(width: 2,color: Colors.grey),
+                                              right:  BorderSide(width: 2,color: Colors.grey),
+                                            )
+                                        ),
+                                        child: Text('adf')
+                                    ),
+                                  ],
+                                );
+                              }
+                          ),
+                        )
 
-              ],
-            ),
-          ),
-
-
-        ],
-      ),
-    );
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            );
   }
+}
+DateTime calcMaxDate(List<DateTime> dates){
+  DateTime maxDate = dates[0];
+  dates.forEach((date){
+    if(date.isAfter(maxDate)){
+      maxDate=date;
+    }
+  });
+  return maxDate;
 }
