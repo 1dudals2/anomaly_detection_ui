@@ -18,25 +18,30 @@ class _VehiclePageState extends State<VehiclePage> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
     return Expanded(
-      child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            VehicleList(),
-            Expanded(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Column(
-                  children: [
-                    VehicleChartPage(),
-                    VehicleGraphPage(),
-                  ],
-                ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          VehicleList(),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Column(
+                        children: [
+                          VehicleChartPage(),
+                          VehicleGraphPage(),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

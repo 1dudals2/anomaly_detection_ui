@@ -18,12 +18,11 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width ;
-    double height = MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight;
+    double width = 1800;
+    double height = 1000;
     containerWidth = width;
     containerHeight = height * 0.5;
     return Center(
-
       child: FittedBox(
         child: Container(
             color: Colors.amber,

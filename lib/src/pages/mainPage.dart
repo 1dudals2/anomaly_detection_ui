@@ -43,6 +43,7 @@ class _MainPageState extends State<MainPage> {
 
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -70,10 +71,7 @@ class _MainPageState extends State<MainPage> {
             ),
             mode == 0 ?
             Expanded(
-              child: SingleChildScrollView(
-                //scrollDirection: Axis.horizontal,
-                  child: TrackPage()
-              ),
+              child: SingleChildScrollView(child: TrackPage()),
             )
             : VehiclePage(),
           ],
