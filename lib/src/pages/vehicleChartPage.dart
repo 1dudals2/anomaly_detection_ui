@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
+import 'package:anomaly_detection_ui/models/histogramTick.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
@@ -22,9 +25,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
     List<List<dynamic>> rowsAsListOfValues = const CsvToListConverter().convert(myData);
     setState(() {
       normalLoss = rowsAsListOfValues.expand((element) => element).toList();
-      print(normalLoss);
     });
-
   }
   @override
   void initState() {
@@ -36,7 +37,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
   Widget build(BuildContext context) {
 
     MQTTModel mqttModel = context.watch<MQTTModel>();
-
+    double? tickValue  = context.watch<HistogramTick>().histTick[mqttModel.currentVehicleId];
 
     return mqttModel.ohtDatas[mqttModel.currentVehicleId] == null? Container():
     Row(
@@ -47,16 +48,27 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
           width: 550,
           height: 400,
             child: normalLoss.length == 0? Container() : SfCartesianChart(
-                primaryXAxis: CategoryAxis(),
+                primaryXAxis: NumericAxis(
+
+                  plotOffset: 90
+                ),
                 series: <ChartSeries>[
-                  // Renders line chart
                   HistogramSeries<dynamic, double>(
                       dataSource: normalLoss,
-                      yValueMapper: (dynamic data, _) => data,
+                      yValueMapper: (dynamic data, _) => log(data)  * 4,
                       binInterval: 1,
-                      showNormalDistributionCurve: true,
-                      curveColor: const Color.fromRGBO(192, 108, 132, 1),
-                      borderWidth: 3
+                      color: Colors.indigo,
+                      borderWidth: 7,
+                    spacing: 0
+                  ),
+                  ColumnSeries<double, double>(
+                      spacing: 0,
+                      dataSource: tickValue == null ? [-30] : [tickValue!],
+                      xValueMapper: (double sales, _) => sales,
+                      yValueMapper: (double sales, _) => 100,
+                      borderWidth: 3,
+                      color: Colors.pink,
+                      opacity: 0.5
                   ),
                 ]
             )

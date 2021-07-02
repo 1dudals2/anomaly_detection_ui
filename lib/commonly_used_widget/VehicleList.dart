@@ -67,7 +67,7 @@ class _VehicleListState extends State<VehicleList> {
                             ),
 
                             CircleAvatar(
-                              backgroundColor:  mqttModel.ohtDatas["0" + (index + 1).toString()]!.last.isNormal ? Color(0XFFbfff00) :Color(0XFFdc143c),
+                              backgroundColor:  mqttModel.ohtDatas["0" + (index + 1).toString()]!.last.is_anomal ? Color(0XFFbfff00) :Color(0XFFdc143c),
                               radius: 18,
                             ),
                             SizedBox(width: 5,)
