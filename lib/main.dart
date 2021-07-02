@@ -1,13 +1,16 @@
 import 'dart:convert';
+import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
+import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/src/providers/MQTTProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
-import 'package:flutter/services.dart';
-import 'models/MapData.dart';
+import 'package:provider/provider.dart';
+
+import 'models/mqttModel.dart';
 void main(){
   runApp(MyApp());
   doWhenWindowReady(() {
-    final initialSize = Size(600, 450);
+    final initialSize = Size(1700, 1080);
     appWindow.minSize = initialSize;
     appWindow.size = initialSize;
     appWindow.alignment = Alignment.center;
@@ -18,7 +21,7 @@ void main(){
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    loadJsonData().then((value) => print(value.segments.length));
+
     //DataCollectManager().turnToCSV();
     return MQTTProvider();
   }
@@ -26,9 +29,4 @@ class MyApp extends StatelessWidget{
 
 
 
-Future<MapData> loadJsonData() async {
-  var jsonText = await rootBundle.loadString('lib/semioht-v3.0.0.json');
-  Map<String, dynamic> jsonMap = jsonDecode(jsonText);
-  var map = MapData.fromJson(jsonMap);
-  return(map);
-}
+

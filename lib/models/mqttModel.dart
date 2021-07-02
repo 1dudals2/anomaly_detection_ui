@@ -3,15 +3,22 @@ import 'dart:collection';
 import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:flutter/cupertino.dart';
 class MQTTModel with ChangeNotifier {
+  bool isinited = false;
   String currentVehicleId = "01";
   int currentSegmentId = 0;
-  HashMap<String, Queue<OhtDataModel>> anomalDatas = new HashMap();
+  List<Queue<OhtDataModel>> anomalDatas = [];
   HashMap <String, Queue<OhtDataModel>> ohtDatas = new HashMap();
-
+  HashMap<int, int>  suspiciousSegments = new HashMap();
+  int currentAnomalDataIndex = -1;
+  HashMap<String, bool> isWriting = new HashMap();
   void addOht(String ohtId) {
     ohtDatas[ohtId] = Queue();
+    isWriting[ohtId] = false;
   }
-
+  void isinitiatedChange(){
+    isinited = true;
+    notifyListeners();
+  }
   void addToDatas(String ohtId, OhtDataModel data) {
     int? length = ohtDatas[ohtId]?.length;
     if (length != null) {
@@ -23,13 +30,19 @@ class MQTTModel with ChangeNotifier {
         ohtDatas[ohtId]?.add(data);
       }
       if (data.isNormal == false) {
-        if(!anomalDatas.keys.contains(data.vehicle_id)){
-          anomalDatas[data.vehicle_id] = new Queue();
+        if(isWriting[ohtId] == true) anomalDatas[currentAnomalDataIndex].add(data);
+        else {
+          anomalDatas.add(new Queue());
+          isWriting[ohtId] = true;
+          currentAnomalDataIndex += 1;
+          anomalDatas[currentAnomalDataIndex].add(data);
         }
-        anomalDatas[data.vehicle_id]?.add(data);
-        notifyListeners();
       }
+      /*else{
+        isWriting[ohtId] = false;
+      }*/
     }
+    notifyListeners();
   }
     void changeCurrentVehicleId(int newId) {
       newId ++;
@@ -46,6 +59,16 @@ class MQTTModel with ChangeNotifier {
     }
     void changeCurrentSegmentId(int newId) {
       currentSegmentId = newId;
+      notifyListeners();
+    }
+
+    void addToSuspiciousSegments(int segmentId){
+      if(!suspiciousSegments.containsKey(segmentId)){
+        suspiciousSegments[segmentId] = 1;
+      }
+      else{
+        suspiciousSegments[segmentId] =suspiciousSegments[segmentId]! + 1;
+      }
       notifyListeners();
     }
   }

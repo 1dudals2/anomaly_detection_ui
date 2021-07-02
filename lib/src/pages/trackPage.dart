@@ -15,11 +15,16 @@ class _TrackPageState extends State<TrackPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
-     // mainAxis: Axis.horizontal,
-      children: [
-        MapPaintingWidget(),
-        AnomalHistoryTable(),
-      ],
+      children: [Row(
+       mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          MapPaintingWidget(),
+          AnomalHistoryTable(),
+        ],
+      ),
+        TrackPlotWidget()
+      ]
     );
   }
 }

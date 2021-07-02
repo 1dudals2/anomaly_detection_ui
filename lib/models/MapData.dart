@@ -12,8 +12,8 @@ class MapData{
   factory MapData.fromJson(Map<String, dynamic> json) => _$MapDataFromJson(json);
   Map<String, dynamic> toJson() => _$MapDataToJson(this);
 
-  Point findPointById( int id){
-    return(points.firstWhere((element) => element.id == id));
+  static Point findPointById( int id, MapData map){
+    return(map.points.firstWhere((element) => element.id == id));
   }
 
 }
@@ -21,8 +21,8 @@ class MapData{
 @JsonSerializable()
 class Point{
   int id;
-  int x;
-  int y;
+  double x;
+  double y;
   Point(
       this.id,
       this.x,

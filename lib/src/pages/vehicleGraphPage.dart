@@ -16,18 +16,18 @@ class _VehicleGraphPageState extends State<VehicleGraphPage> {
     return Row(
       children: [
         Container(
-          height: 500,
+          height: 420,
           width: 50,
           color: Colors.red,
         ),
         Container(
-            height: 350,
+            height: 300,
             width: 250,
           color: Colors.blue,
           child: Center(child: Text("O\nH\nT",style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),)),
         ),
         Container(
-            height: 500 ,
+            height: 420 ,
             width: 50,
           color: Colors.grey
         )

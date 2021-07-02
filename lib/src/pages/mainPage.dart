@@ -43,7 +43,6 @@ class _MainPageState extends State<MainPage> {
 
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

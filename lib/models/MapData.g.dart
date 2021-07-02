@@ -25,8 +25,8 @@ Map<String, dynamic> _$MapDataToJson(MapData instance) => <String, dynamic>{
 Point _$PointFromJson(Map<String, dynamic> json) {
   return Point(
     json['id'] as int,
-    json['x'] as int,
-    json['y'] as int,
+    json['x'].toDouble() as double,
+    json['y'].toDouble() as double,
   );
 }
 
