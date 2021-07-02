@@ -37,7 +37,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
                       bottom: BorderSide(width: 1.0, color: Color(0xFF7283FC)),
                     )
                 ),
-                  child: SfCartesianChart(
+                  child: mqttModel.anomalDatas.length == 0 ? Container() :SfCartesianChart(
                       primaryXAxis: CategoryAxis(),
                       series: <ChartSeries>[
                         // Renders line chart
@@ -62,7 +62,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
                       bottom: BorderSide(width: 1.0, color: Color(0xFF7283FC)),
                     )
                 ),
-                  child: SfCartesianChart(
+                  child: mqttModel.anomalDatas.length == 0 ? Container() :SfCartesianChart(
                       primaryXAxis: CategoryAxis(),
                       series: <ChartSeries>[
                         // Renders line chart
@@ -87,7 +87,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
                       bottom: BorderSide(width: 1.0, color: Color(0xFF7283FC)),
                     )
                 ),
-                  child: SfCartesianChart(
+                  child: mqttModel.anomalDatas.length == 0 ? Container() :SfCartesianChart(
                       primaryXAxis: CategoryAxis(),
                       series: <ChartSeries>[
                         // Renders line chart

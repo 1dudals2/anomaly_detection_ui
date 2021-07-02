@@ -30,17 +30,20 @@ class MQTTModel with ChangeNotifier {
         ohtDatas[ohtId]?.add(data);
       }
       if (data.isNormal == false) {
-        if(isWriting[ohtId] == true) anomalDatas[currentAnomalDataIndex].add(data);
-        else {
+        if(isWriting[ohtId] == true) {
+          anomalDatas[currentAnomalDataIndex].add(data);
+          if(anomalDatas[currentAnomalDataIndex].length > 100){
+            isWriting[ohtId] = false;
+          }
+        } else {
           anomalDatas.add(new Queue());
           isWriting[ohtId] = true;
           currentAnomalDataIndex += 1;
           anomalDatas[currentAnomalDataIndex].add(data);
+
         }
       }
-      /*else{
-        isWriting[ohtId] = false;
-      }*/
+
     }
     notifyListeners();
   }
