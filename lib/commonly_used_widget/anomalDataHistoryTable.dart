@@ -25,13 +25,15 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
     MQTTModel mqttModel = context.watch<MQTTModel>();
     AnomalHistoryIndex anomalIndex = context.watch<AnomalHistoryIndex>();
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+     // scrollDirection: Axis.horizontal,
       child: Container(
+        color: Colors.white,
         width: width*0.7,
         height: height*0.3,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+
             Container(
               margin:  EdgeInsets.fromLTRB(width*0.03, height*0.0, width*0.0, 0),
               width: width*0.28,
@@ -154,7 +156,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                         right:  BorderSide(width: 2,color: Colors.black12),
                                       )
                                   ),
-                                  child: Center(child: Text('adf'))
+                                  child: Center(child: Text(mqttModel.anomalDatas[index]!.first.current_segment.toString()))
                               ),
                               Container(
                                   height: height*0.05,
@@ -165,7 +167,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                         right:  BorderSide(width: 2,color: Colors.black12),
                                       )
                                   ),
-                                  child: Center(child: Text('adf'))
+                                  child: Center(child: Text('N/A'))
                               ),
 
                             ],
@@ -178,7 +180,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
             ),
             Container(
               margin:  EdgeInsets.fromLTRB(width*0.03, height*0.0, width*0.03, 0),
-              width: width*0.28,
+              width: width*0.21,
               child: Column(
                 children: [
                   Container(
@@ -205,34 +207,6 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                 right:  BorderSide(width: 2,color: Colors.white70),
                               )
                           ),
-                          child: Center(child: Text('Time',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),))
-                      ),
-                      Container(
-                          height: height*0.05,
-                          width: width*0.07,
-                          decoration: BoxDecoration(
-                              color: Color(0xFF7283FC),
-                              border: Border(
-                                top: BorderSide(width: 2,color:Colors.white70),
-                                bottom: BorderSide(width: 2,color: Colors.white70),
-                                left:  BorderSide(width: 2,color: Colors.white70),
-                                right:  BorderSide(width: 2,color: Colors.white70),
-                              )
-                          ),
-                          child: Center(child: Text('Vehicle',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),))
-                      ),
-                      Container(
-                          height: height*0.05,
-                          width: width*0.07,
-                          decoration: BoxDecoration(
-                              color: Color(0xFF7283FC),
-                              border: Border(
-                                top: BorderSide(width: 2,color:Colors.white70),
-                                bottom: BorderSide(width: 2,color: Colors.white70),
-                                left:  BorderSide(width: 2,color: Colors.white70),
-                                right:  BorderSide(width: 2,color: Colors.white70),
-                              )
-                          ),
                           child: Center(child: Text('Segment',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),))
                       ),
                       Container(
@@ -247,8 +221,23 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                 right:  BorderSide(width: 2,color: Colors.white70),
                               )
                           ),
-                          child: Center(child: Text('Loss',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),))
+                          child: Center(child: Text('Alarm Rep',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),))
                       ),
+                      Container(
+                          height: height*0.05,
+                          width: width*0.07,
+                          decoration: BoxDecoration(
+                              color: Color(0xFF7283FC),
+                              border: Border(
+                                top: BorderSide(width: 2,color:Colors.white70),
+                                bottom: BorderSide(width: 2,color: Colors.white70),
+                                left:  BorderSide(width: 2,color: Colors.white70),
+                                right:  BorderSide(width: 2,color: Colors.white70),
+                              )
+                          ),
+                          child: Center(child: Text('Loss Ratio',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),))
+                      ),
+
 
                     ],
                   ),
@@ -256,16 +245,14 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                     height: height*0.2,
                     child: ListView.builder(
                         shrinkWrap: true,
-                        itemCount: mqttModel.anomalDatas.length,
+                        itemCount: mqttModel.suspiciousSegments.keys.toList().length,
                         itemBuilder: (BuildContext context, int index){
+                          List<int> sortedKeys = (mqttModel.suspiciousSegments.keys.toList());
+                          sortedKeys.sort();
                           return Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              GestureDetector(
-                                onTap: (){
-                                  anomalIndex.changeIndex(index);
-                                },
-                                child: Container(
+                              Container(
                                     height: height*0.05,
                                     width: width*0.07,
                                     decoration: BoxDecoration(
@@ -275,8 +262,18 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                           right:  BorderSide(width: 2,color: Colors.black12),
                                         )
                                     ),
-                                    child: Center(child: Text(mqttModel.anomalDatas[index]!.first.anomal_timestamp))
+                                    child: Center(child: Text(sortedKeys[index].toString()))
                                 ),
+                              Container(
+                                  height: height*0.05,
+                                  width: width*0.07,
+                                  decoration: BoxDecoration(
+                                      border: Border(
+                                        bottom: BorderSide(width: 2,color: Colors.black12),
+                                        right:  BorderSide(width: 2,color: Colors.black12),
+                                      )
+                                  ),
+                                  child: Center(child: Text(mqttModel.suspiciousSegments![sortedKeys[index]].toString()))
                               ),
                               Container(
                                   height: height*0.05,
@@ -287,30 +284,9 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                         right:  BorderSide(width: 2,color: Colors.black12),
                                       )
                                   ),
-                                  child: Center(child: Text(mqttModel.anomalDatas[index]!.first.vehicle_id))
+                                  child: Center(child: Text('N/A'))
                               ),
-                              Container(
-                                  height: height*0.05,
-                                  width: width*0.07,
-                                  decoration: BoxDecoration(
-                                      border: Border(
-                                        bottom: BorderSide(width: 2,color: Colors.black12),
-                                        right:  BorderSide(width: 2,color: Colors.black12),
-                                      )
-                                  ),
-                                  child: Center(child: Text('adf'))
-                              ),
-                              Container(
-                                  height: height*0.05,
-                                  width: width*0.07,
-                                  decoration: BoxDecoration(
-                                      border: Border(
-                                        bottom: BorderSide(width: 2,color: Colors.black12),
-                                        right:  BorderSide(width: 2,color: Colors.black12),
-                                      )
-                                  ),
-                                  child: Center(child: Text('adf'))
-                              ),
+
 
                             ],
                           );

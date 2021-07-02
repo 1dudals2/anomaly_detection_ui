@@ -40,7 +40,7 @@ class _MainPageState extends State<MainPage> {
       numberOfVehicles = mqttModel. ohtDatas["01"]?.last.num_of_vehicles;
 
     return MaterialApp(
-
+      color: Colors.white,
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Column(

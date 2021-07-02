@@ -17,6 +17,7 @@ class MQTTModel with ChangeNotifier {
   HashMap<int, int>  suspiciousSegments = new HashMap();
   int currentAnomalDataIndex = -1;
   HashMap<String, bool> isWriting = new HashMap();
+  HashMap<String, int> currentSegment = new HashMap();
   late HistogramTick hist;
   List<dynamic> normalLoss = [];
 
@@ -44,7 +45,7 @@ class MQTTModel with ChangeNotifier {
       if (data.is_anomal == true) {
         if(isWriting[ohtId] == true) {
           anomalDatas[currentAnomalDataIndex].add(data);
-          if(anomalDatas[currentAnomalDataIndex].length > 100){
+          if(currentSegment[ohtId] != data.current_segment){
             isWriting[ohtId] = false;
           }
         } else {
@@ -52,8 +53,10 @@ class MQTTModel with ChangeNotifier {
           isWriting[ohtId] = true;
           currentAnomalDataIndex += 1;
           anomalDatas[currentAnomalDataIndex].add(data);
-
+          addToSuspiciousSegments(data.current_segment);
         }
+        currentSegment[ohtId] = data.current_segment;
+
       }
       if(ohtId == currentVehicleId) {
         if(data.is_anomal)

@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 
 double containerWidth = 400;
 double containerHeight = 400;
-double scaleFactorForWidget = 0.009;
+double scaleFactorForWidget = 0.018;
 class MapPaintingWidget extends StatefulWidget {
   const MapPaintingWidget({Key? key}) : super(key: key);
 

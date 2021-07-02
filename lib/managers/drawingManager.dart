@@ -199,9 +199,9 @@ class DrawingManager{
     {
       var start_point = MapData.findPointById(segment.start_point, map);
       var end_point = MapData.findPointById(segment.end_point, map);
-      var startPoint = Offset(start_point.x + 10000,-start_point.y);
-      var endPoint = Offset(end_point.x + 10000, -end_point.y);
-      if(segment.id == 17) paint.color = Colors.redAccent;
+      var startPoint = Offset(start_point.x +3000 ,-start_point.y + 3000);
+      var endPoint = Offset(end_point.x +3000, -end_point.y + 3000);
+      if(segment.id == 3 || segment.id == 21 || segment.id == 144 || segment.id == 89 || segment.id == 71) paint.color = Colors.redAccent;
       else paint.color =Color(0xFF7283FC);
       var segparts = segment.seg_parts;
       if(segparts.length == 1){

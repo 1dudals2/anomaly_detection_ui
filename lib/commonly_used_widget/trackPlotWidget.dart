@@ -25,6 +25,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
     return Container(
       width: width*0.7,
       height: height*0.7,
+      color: Colors.white,
       child: Container(
         margin: EdgeInsets.fromLTRB(width*0.03, height*0.01, width*0.03, height*0.01),
         decoration: BoxDecoration(
