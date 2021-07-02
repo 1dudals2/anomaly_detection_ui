@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
+import 'package:anomaly_detection_ui/models/AnomalHistoryIndex.dart';
 import 'package:anomaly_detection_ui/models/histogramTick.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
@@ -37,6 +38,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = (MediaQuery.of(context).size.height-appWindow.titleBarHeight);
+    AnomalHistoryIndex anomalIndex = context.watch<AnomalHistoryIndex>();
 
     MQTTModel mqttModel = context.watch<MQTTModel>();
     double? tickValue  = context.watch<HistogramTick>().histTick[mqttModel.currentVehicleId];
@@ -174,17 +176,22 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                         return Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Container(
-                              height: height*0.05,
-                              width: width*0.07,
-                                decoration: BoxDecoration(
-                                    border: Border(
-                                      left: BorderSide(width: 2,color: Colors.black12),
-                                      bottom: BorderSide(width: 2,color: Colors.black12),
-                                      right:  BorderSide(width: 2,color: Colors.black12),
-                                    )
-                                ),
-                                child: Center(child: Text(mqttModel.anomalDatas[index]!.first.anomal_timestamp),),
+                            GestureDetector(
+                              onTap: (){
+                                anomalIndex.changeIndex(index);
+                              },
+                              child: Container(
+                                height: height*0.05,
+                                width: width*0.07,
+                                  decoration: BoxDecoration(
+                                      border: Border(
+                                        left: BorderSide(width: 2,color: Colors.black12),
+                                        bottom: BorderSide(width: 2,color: Colors.black12),
+                                        right:  BorderSide(width: 2,color: Colors.black12),
+                                      )
+                                  ),
+                                  child: Center(child: Text(mqttModel.anomalDatas[index]!.first.anomal_timestamp),),
+                              ),
                             ),
                             Container(
                                 height: height*0.05,
@@ -206,7 +213,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                                       right:  BorderSide(width: 2,color: Colors.black12),
                                     )
                                 ),
-                                child: Center(child: Text('adf'))
+                                child: Center(child: Text(mqttModel.anomalDatas[index]!.first.current_segment.toString()))
                             ),
                             Container(
                                 height: height*0.05,
@@ -217,7 +224,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                                       right:  BorderSide(width: 2,color: Colors.black12),
                                     )
                                 ),
-                                child: Center(child: Text('adf'))
+                                child: Center(child: Text('N/A'))
                             ),
 
                           ],
