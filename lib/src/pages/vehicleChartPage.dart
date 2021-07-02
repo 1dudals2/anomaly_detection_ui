@@ -5,18 +5,38 @@ import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+import 'package:csv/csv.dart';
+
 class VehicleChartPage extends StatefulWidget {
   const VehicleChartPage({Key? key}) : super(key: key);
   @override
   _VehicleChartPageState createState() => _VehicleChartPageState();
 }
 class _VehicleChartPageState extends State<VehicleChartPage> {
+  List<dynamic> normalLoss = [];
+  _loadAsset() async{
+    String myData = await  rootBundle.loadString('lib/normalLoss.csv');
+    List<List<dynamic>> rowsAsListOfValues = const CsvToListConverter().convert(myData);
+    setState(() {
+      normalLoss = rowsAsListOfValues.expand((element) => element).toList();
+      print(normalLoss);
+    });
+
+  }
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _loadAsset();
+  }
   @override
   Widget build(BuildContext context) {
 
     MQTTModel mqttModel = context.watch<MQTTModel>();
+
 
     return mqttModel.ohtDatas[mqttModel.currentVehicleId] == null? Container():
     Row(
@@ -26,15 +46,18 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
         Container(
           width: 550,
           height: 400,
-            child: SfCartesianChart(
+            child: normalLoss.length == 0? Container() : SfCartesianChart(
                 primaryXAxis: CategoryAxis(),
                 series: <ChartSeries>[
                   // Renders line chart
-                  LineSeries<OhtDataModel, String>(
-                      dataSource: mqttModel.ohtDatas[mqttModel.currentVehicleId]!.toList(),
-                      xValueMapper: (OhtDataModel data, _) => data.anomal_timestamp,
-                      yValueMapper: (OhtDataModel data, _) => data.accx_rms,
-                  )
+                  HistogramSeries<dynamic, double>(
+                      dataSource: normalLoss,
+                      yValueMapper: (dynamic data, _) => data,
+                      binInterval: 1,
+                      showNormalDistributionCurve: true,
+                      curveColor: const Color.fromRGBO(192, 108, 132, 1),
+                      borderWidth: 3
+                  ),
                 ]
             )
         ),

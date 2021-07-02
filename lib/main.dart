@@ -4,15 +4,11 @@ import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/src/providers/MQTTProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
-import 'package:provider/provider.dart';
-
 import 'models/mqttModel.dart';
 void main(){
   runApp(MyApp());
   doWhenWindowReady(() {
-    final initialSize = Size(1700, 1080);
-    appWindow.minSize = initialSize;
-    appWindow.size = initialSize;
+    MaximizeWindowButton()!.onPressed!();
     appWindow.alignment = Alignment.center;
     appWindow.show();
   });

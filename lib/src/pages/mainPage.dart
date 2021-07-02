@@ -57,9 +57,6 @@ class _MainPageState extends State<MainPage> {
                       MinimizeWindowButton(
                         colors: buttonColors,
                       ),
-                      MaximizeWindowButton(
-                        colors: buttonColors,
-                      ),
                       CloseWindowButton(
                         colors: closeButtonColors,
                       ),

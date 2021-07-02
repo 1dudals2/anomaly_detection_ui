@@ -1,5 +1,7 @@
 
 class OhtDataModel{
+  final bool is_anomal;
+  final int current_segment;
   final String vehicle_id;
   final int event_label;
   final int num_of_vehicles;
@@ -17,6 +19,8 @@ class OhtDataModel{
   final bool isNormal;
 
   OhtDataModel(
+      this.is_anomal,
+      this.current_segment,
       this.vehicle_id,
       this.num_of_vehicles,
       this.anomal_timestamp,
@@ -35,7 +39,9 @@ class OhtDataModel{
       );
 
   OhtDataModel.fromJson(Map<String, dynamic> json)
-      : vehicle_id = json['vehicle_id'],
+      : is_anomal = json['is_anomal'],
+        current_segment = json['current_segment'],
+        vehicle_id = json['vehicle_id'],
         event_label  = json['event_label'],
         num_of_vehicles = json['num_of_vehicles'],
         anomal_timestamp = json['anomal_timestamp'],
@@ -67,6 +73,5 @@ class OhtDataModel{
     'fork_lift_speed' : fork_lift_speed,
     'event_label ' : event_label ,
     'yaw' : yaw,
-
   };
 }
