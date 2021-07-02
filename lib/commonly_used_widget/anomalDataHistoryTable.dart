@@ -101,6 +101,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                     ],
                   ),
                   Container(
+                    height: 240,
                     child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: mqttModel.anomalDatas.length,

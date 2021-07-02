@@ -21,7 +21,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
     return mqttModel.ohtDatas[mqttModel.currentVehicleId] == null? Container():
     Row(
       crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.end,
+      //mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Container(
           width: 550,
@@ -38,7 +38,9 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                 ]
             )
         ),
+        SizedBox(width: 140,),
         Container(
+          //height: 500,
           width: 600,
           child: Column(
             children: [
@@ -111,8 +113,10 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                   ),
 
                 ],
-              ),
+                ),
               Container(
+
+                height: 240,
                 child: ListView.builder(
                     shrinkWrap: true,
                     itemCount: mqttModel.anomalDatas.length,
