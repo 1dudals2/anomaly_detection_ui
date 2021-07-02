@@ -1,3 +1,4 @@
+import 'package:anomaly_detection_ui/models/AnomalHistoryIndex.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:anomaly_detection_ui/models/ohtDataModel.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
@@ -17,6 +18,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
 
   @override
   Widget build(BuildContext context) {
+    AnomalHistoryIndex anomalIndex = context.watch<AnomalHistoryIndex>();
     MQTTModel mqttModel = context.watch<MQTTModel>();
     double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
     double height = (MediaQuery.of(context).size.height* MediaQuery.of(context).devicePixelRatio-appWindow.titleBarHeight)*0.5;
@@ -42,7 +44,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
                       series: <ChartSeries>[
                         // Renders line chart
                         LineSeries<OhtDataModel, String>(
-                          dataSource: mqttModel.anomalDatas[0]!.toList(),
+                          dataSource: mqttModel.anomalDatas[anomalIndex.index]!.toList(),
                           xValueMapper: (OhtDataModel data, _) => data.anomal_timestamp,
                           yValueMapper: (OhtDataModel data, _) => data.accx_rms,
                         )
@@ -67,7 +69,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
                       series: <ChartSeries>[
                         // Renders line chart
                         LineSeries<OhtDataModel, String>(
-                          dataSource: mqttModel.anomalDatas[0]!.toList(),
+                          dataSource: mqttModel.anomalDatas[anomalIndex.index]!.toList(),
                           xValueMapper: (OhtDataModel data, _) => data.anomal_timestamp,
                           yValueMapper: (OhtDataModel data, _) => data.yaw,
                         )
@@ -92,7 +94,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
                       series: <ChartSeries>[
                         // Renders line chart
                         LineSeries<OhtDataModel, String>(
-                          dataSource: mqttModel.anomalDatas[0]!.toList(),
+                          dataSource: mqttModel.anomalDatas[anomalIndex.index]!.toList(),
                           xValueMapper: (OhtDataModel data, _) => data.anomal_timestamp,
                           yValueMapper: (OhtDataModel data, _) => data.drive_right_torque,
                         )

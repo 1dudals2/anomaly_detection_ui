@@ -38,7 +38,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                 ]
             )
         ),
-        SizedBox(width: 140,),
+        SizedBox(width: 50,),
         Container(
           //height: 500,
           width: 600,
@@ -145,7 +145,7 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
                                     right:  BorderSide(width: 2,color: Colors.black12),
                                   )
                               ),
-                              child: Center(child: Text(index.toString()))
+                              child: Center(child: Text(mqttModel.anomalDatas[index]!.first.vehicle_id))
                           ),
                           Container(
                               height: 70,

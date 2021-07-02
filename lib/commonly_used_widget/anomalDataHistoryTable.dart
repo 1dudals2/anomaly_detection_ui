@@ -1,6 +1,7 @@
 import 'package:anomaly_detection_ui/commonly_used_widget/trackPlotWidget.dart';
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
+import 'package:anomaly_detection_ui/models/AnomalHistoryIndex.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';
@@ -18,7 +19,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
   @override
   Widget build(BuildContext context) {
     MQTTModel mqttModel = context.watch<MQTTModel>();
-
+    AnomalHistoryIndex anomalIndex = context.watch<AnomalHistoryIndex>();
     return Padding(
       padding: const EdgeInsets.only(left : 12.0, right: 12.0),
       child: SingleChildScrollView(
@@ -109,17 +110,22 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                           return Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Container(
-                                  height: 70,
-                                  width: 150,
-                                  decoration: BoxDecoration(
-                                      border: Border(
-                                        left: BorderSide(width: 2,color: Colors.black12),
-                                        bottom: BorderSide(width: 2,color: Colors.black12),
-                                        right:  BorderSide(width: 2,color: Colors.black12),
-                                      )
-                                  ),
-                                  child: Center(child: Text(mqttModel.anomalDatas[index]!.first.anomal_timestamp))
+                              GestureDetector(
+                                onTap: (){
+                                  anomalIndex.changeIndex(index);
+                                },
+                                child: Container(
+                                    height: 70,
+                                    width: 150,
+                                    decoration: BoxDecoration(
+                                        border: Border(
+                                          left: BorderSide(width: 2,color: Colors.black12),
+                                          bottom: BorderSide(width: 2,color: Colors.black12),
+                                          right:  BorderSide(width: 2,color: Colors.black12),
+                                        )
+                                    ),
+                                    child: Center(child: Text(mqttModel.anomalDatas[index]!.first.anomal_timestamp))
+                                ),
                               ),
                               Container(
                                   height: 70,
@@ -130,7 +136,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                                         right:  BorderSide(width: 2,color: Colors.black12),
                                       )
                                   ),
-                                  child: Center(child: Text(index.toString()))
+                                  child: Center(child: Text(mqttModel.anomalDatas[index]!.first.vehicle_id))
                               ),
                               Container(
                                   height: 70,
