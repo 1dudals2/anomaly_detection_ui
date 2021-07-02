@@ -1,4 +1,5 @@
 import 'package:anomaly_detection_ui/commonly_used_widget/VehicleList.dart';
+import 'package:anomaly_detection_ui/commonly_used_widget/trackPlotWidget.dart';
 import 'package:anomaly_detection_ui/src/pages/vehicleChartPage.dart';
 import 'package:anomaly_detection_ui/src/pages/vehicleGraphPage.dart';
 import 'package:flutter/cupertino.dart';
@@ -24,20 +25,17 @@ class _VehiclePageState extends State<VehiclePage> {
           VehicleList(),
           Expanded(
             child: SingleChildScrollView(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Column(
-                        children: [
-                          VehicleChartPage(),
-                          VehicleGraphPage(),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
+              scrollDirection: Axis.horizontal,
+              child: Container(
+                width: width*0.83,
+                child: Column(
+                 crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    VehicleChartPage(),
+                    //VehicleGraphPage(),
+                    TrackPlotWidget(),
+                  ],
+                ),
               ),
             ),
           ),

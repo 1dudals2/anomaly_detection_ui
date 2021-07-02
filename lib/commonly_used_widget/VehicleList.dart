@@ -1,6 +1,7 @@
 import 'package:anomaly_detection_ui/managers/dataCollectManager.dart';
 import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/models/mqttModel.dart';
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
@@ -12,7 +13,8 @@ class VehicleList extends StatefulWidget {
 class _VehicleListState extends State<VehicleList> {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width *0.3;
+    double width = MediaQuery.of(context).size.width;
+    double height = (MediaQuery.of(context).size.height-appWindow.titleBarHeight);
     MQTTModel mqttModel = context.watch<MQTTModel>();
 
     if(mqttModel.ohtDatas[mqttModel.currentVehicleId] != null){
@@ -22,10 +24,11 @@ class _VehicleListState extends State<VehicleList> {
     if( mqttModel.ohtDatas[mqttModel.currentVehicleId] != null && mqttModel.ohtDatas[mqttModel.currentVehicleId]!.isNotEmpty && mqttModel. ohtDatas["01"]?.last?.num_of_vehicles != null)
       numberOfVehicles = mqttModel. ohtDatas[mqttModel.currentVehicleId]?.last.num_of_vehicles;
     return  Container(
-      width: 300,
+      margin: EdgeInsets.only(left: width*0.02),
+      width: width*0.15,
       decoration: BoxDecoration(
         //color: Colors.lightBlue,
-          border: Border.all(color: Colors.blueAccent)
+          border: Border.all(color:Colors.indigo)
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,15 +36,18 @@ class _VehicleListState extends State<VehicleList> {
         children: [
           Container(
             child: Center(child: Text("Active Vehicles", style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)),
-            width: 300,
-            height: 100,
+            width: width*0.15,
+            height: height*0.1,
             decoration: BoxDecoration(
-                border: Border.all(color: Colors.blueAccent)
+                //color: Color(0xFF7283FC),
+                border: Border(
+                  bottom: BorderSide(color:Colors.indigo),
+                )
             ),
           ),
           mqttModel.ohtDatas[mqttModel.currentVehicleId] != null ? Expanded(
             child: Container(
-              width: 300,
+              width: width*0.15,
               child: ListView.builder(
                   shrinkWrap: true,
                   itemCount: numberOfVehicles,//itemCount: numberOfVehicles, @todo number of vehicles로 바꿔야함
@@ -52,15 +58,19 @@ class _VehicleListState extends State<VehicleList> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                            border: Border.all(color: Colors.blueAccent)
+                          //color: Color(0xFF7283FC),
+                            border: Border(
+                              bottom: BorderSide(color:Colors.indigo),
+                            )
                         ),
-                        height: 100,
+                        height: height*0.1,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
                               // width:200,
-                              height: 100,
+                              padding: EdgeInsets.only(left: width*0.01),
+                              height: height*0.1,
                               child: Center(
                                 child: Text("OHT  " + (index + 1).toString(), style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                               ),

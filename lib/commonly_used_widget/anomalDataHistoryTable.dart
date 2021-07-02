@@ -41,7 +41,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                     height: height*0.05,
                     width: width*0.15  ,
                     child: Padding(
-                      padding: const EdgeInsets.only( top: 18),
+                      padding:  EdgeInsets.only( top: height*0.01),
                       child: Text('이상 데이터 History-V',style: TextStyle(color:Colors.indigo,fontWeight: FontWeight.bold,fontSize: 17),),
                     ),
                   ),
@@ -185,7 +185,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
                     height: height*0.05,
                     width: width*0.15  ,
                     child: Padding(
-                      padding: const EdgeInsets.only( top: 18),
+                      padding:  EdgeInsets.only( top: height*0.01),
                       child: Text('Abnormal Tracks',style: TextStyle(color:Colors.indigo,fontWeight: FontWeight.bold,fontSize: 17),),
                     ),
                   ),
