@@ -8,7 +8,10 @@ import 'models/mqttModel.dart';
 void main(){
   runApp(MyApp());
   doWhenWindowReady(() {
-    MaximizeWindowButton()!.onPressed!();
+    // final initialSize = Size(1700, 1080);
+    // appWindow.minSize = initialSize;
+    // appWindow.size = initialSize;
+    MaximizeWindowButton().onPressed!();
     appWindow.alignment = Alignment.center;
     appWindow.show();
   });

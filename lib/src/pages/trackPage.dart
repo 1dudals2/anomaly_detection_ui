@@ -14,16 +14,17 @@ class TrackPage extends StatefulWidget {
 class _TrackPageState extends State<TrackPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [Row(
-       mainAxisAlignment: MainAxisAlignment.center,
+    return Row(
+      children: [
+        MapPaintingWidget(),
+        Column(
+       mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          MapPaintingWidget(),
           AnomalHistoryTable(),
+          TrackPlotWidget()
         ],
       ),
-        TrackPlotWidget()
       ]
     );
   }

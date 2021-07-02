@@ -57,6 +57,9 @@ class _MainPageState extends State<MainPage> {
                       MinimizeWindowButton(
                         colors: buttonColors,
                       ),
+                      MaximizeWindowButton(
+                        colors: buttonColors,
+                      ),
                       CloseWindowButton(
                         colors: closeButtonColors,
                       ),
@@ -67,7 +70,10 @@ class _MainPageState extends State<MainPage> {
             ),
             mode == 0 ?
             Expanded(
-              child: SingleChildScrollView(child: TrackPage()),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                  child: TrackPage()
+              ),
             )
             : VehiclePage(),
           ],

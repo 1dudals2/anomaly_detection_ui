@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:anomaly_detection_ui/managers/drawingManager.dart';
 import 'package:anomaly_detection_ui/models/MapData.dart';
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,11 +37,14 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    containerWidth = 350;
-    containerHeight =430;
+    double width = MediaQuery.of(context).size.width;
+    double height = (MediaQuery.of(context).size.height-appWindow.titleBarHeight);
+
+    containerWidth = width*0.3;
+    containerHeight =height ;
     return Container(
-      width: containerWidth + 16,
-      height: containerHeight +20,
+      width: containerWidth,
+      height: containerHeight,
       color: Color(0xFF7283FC),
       child: FittedBox(
         child: Container(
