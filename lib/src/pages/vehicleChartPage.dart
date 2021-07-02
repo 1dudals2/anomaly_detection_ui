@@ -50,7 +50,8 @@ class _VehicleChartPageState extends State<VehicleChartPage> {
             child: normalLoss.length == 0? Container() : SfCartesianChart(
                 primaryXAxis: NumericAxis(
 
-                  plotOffset: 90
+                  minimum: -50,
+                  maximum: 0,
                 ),
                 series: <ChartSeries>[
                   HistogramSeries<dynamic, double>(

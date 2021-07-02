@@ -41,7 +41,7 @@ class MQTTModel with ChangeNotifier {
         ohtDatas[ohtId]?.removeFirst();
         ohtDatas[ohtId]?.add(data);
       }
-      if (data.is_anomal == false) {
+      if (data.is_anomal == true) {
         if(isWriting[ohtId] == true) {
           anomalDatas[currentAnomalDataIndex].add(data);
           if(anomalDatas[currentAnomalDataIndex].length > 100){
