@@ -17,26 +17,21 @@ class _VehiclePageState extends State<VehiclePage> {
   bool mqttInitialized = false;
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width * MediaQuery.of(context).devicePixelRatio;
+    double width = MediaQuery.of(context).size.width;
     return Expanded(
       child:  Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           VehicleList(),
-          Expanded(
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Container(
-                width: width*0.83,
-                child: Column(
-                 crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    VehicleChartPage(),
-                    //VehicleGraphPage(),
-                    TrackPlotWidget(),
-                  ],
-                ),
-              ),
+          Container(
+            width: width*0.83,
+            child: Column(
+             crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                VehicleChartPage(),
+                //VehicleGraphPage(),
+                TrackPlotWidget(),
+              ],
             ),
           ),
         ],

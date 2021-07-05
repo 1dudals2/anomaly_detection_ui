@@ -31,7 +31,7 @@ class _AnomalHistoryTableState extends State<AnomalHistoryTable> {
         width: width*0.7,
         height: height*0.3,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
 
             Container(
