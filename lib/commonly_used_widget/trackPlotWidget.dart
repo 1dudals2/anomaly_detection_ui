@@ -42,6 +42,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
+              //height: height*0.04,
               margin: EdgeInsets.all(width*0.01),
                 child: Text('Sensor Data',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: Color(0xFF7283FC)),),
             ),
@@ -113,7 +114,7 @@ class _TrackPlotWidgetState extends State<TrackPlotWidget> {
 
                 ],
               ),
-            SizedBox(height: height*0.05,),
+            SizedBox(height: height*0.01,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
