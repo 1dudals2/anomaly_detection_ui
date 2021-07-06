@@ -1,7 +1,9 @@
 import 'dart:ui';
 import 'dart:math' as Math;
 
+import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/models/MapData.dart';
+import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -188,7 +190,7 @@ class DrawingManager{
         startPoint,
         paint);
   }
-  void drawFromMapData(MapData map){
+  void drawFromMapData(MapData map, MQTTModel mqttModel){
     Paint paint = new Paint();
 
     paint.color = Colors.lightBlue;
@@ -201,7 +203,10 @@ class DrawingManager{
       var end_point = MapData.findPointById(segment.end_point, map);
       var startPoint = Offset(start_point.x +3000 ,-start_point.y + 3000);
       var endPoint = Offset(end_point.x +3000, -end_point.y + 3000);
-      if(segment.id == 3 || segment.id == 21 || segment.id == 144 || segment.id == 89 || segment.id == 71) paint.color = Colors.redAccent;
+      if(mqttModel.suspiciousSegments.containsKey(segment.id)){
+        if(mqttModel.suspiciousSegments[segment.id]! < 10) paint.color = Colors.yellowAccent;
+        else paint.color = Colors.redAccent;
+      }
       else paint.color =Color(0xFF7283FC);
       var segparts = segment.seg_parts;
       if(segparts.length == 1){

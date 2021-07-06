@@ -1,11 +1,14 @@
 import 'dart:convert';
 
 import 'package:anomaly_detection_ui/managers/drawingManager.dart';
+import 'package:anomaly_detection_ui/managers/mqttManager.dart';
 import 'package:anomaly_detection_ui/models/MapData.dart';
+import 'package:anomaly_detection_ui/models/mqttModel.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 
 double containerWidth = 400;
 double containerHeight = 400;
@@ -39,7 +42,7 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = (MediaQuery.of(context).size.height-appWindow.titleBarHeight);
-
+    MQTTModel mqttModel = context.watch<MQTTModel>();
     containerWidth = width*0.3;
     containerHeight =height ;
     return Container(
@@ -59,7 +62,7 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
                 scale: scaleFactorForWidget,
                 child: CustomPaint(
 
-                  painter: new OpenPainter(this.map),
+                  painter: new OpenPainter(this.map, mqttModel),
                 ),
               ),
             )),
@@ -68,8 +71,9 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
   }
 }
 class OpenPainter extends CustomPainter{
-  OpenPainter(this.map);
+  OpenPainter(this.map, this.mqttModel);
   MapData map;
+  MQTTModel mqttModel;
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint();
@@ -78,7 +82,7 @@ class OpenPainter extends CustomPainter{
     paint.style = PaintingStyle.stroke;
     paint.strokeWidth = 100;
     DrawingManager drawingManager = new DrawingManager(canvas);
-    drawingManager.drawFromMapData(this.map);
+    drawingManager.drawFromMapData(this.map, mqttModel);
   }
 
   @override
