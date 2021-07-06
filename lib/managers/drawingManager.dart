@@ -190,7 +190,7 @@ class DrawingManager{
         startPoint,
         paint);
   }
-  void drawFromMapData(MapData map, MQTTModel mqttModel){
+  void drawFromMapData(MapData map, MQTTModel mqttModel, double width ,double height){
     Paint paint = new Paint();
 
     paint.color = Colors.lightBlue;
@@ -201,8 +201,8 @@ class DrawingManager{
     {
       var start_point = MapData.findPointById(segment.start_point, map);
       var end_point = MapData.findPointById(segment.end_point, map);
-      var startPoint = Offset(start_point.x +3000 ,-start_point.y + 3000);
-      var endPoint = Offset(end_point.x +3000, -end_point.y + 3000);
+      var startPoint = Offset(start_point.x +width *2 ,-start_point.y + height *4);
+      var endPoint = Offset(end_point.x +width * 2, -end_point.y + height * 4);
       if(mqttModel.suspiciousSegments.containsKey(segment.id)){
         if(mqttModel.suspiciousSegments[segment.id]! < 10) paint.color = Colors.yellowAccent;
         else paint.color = Colors.redAccent;

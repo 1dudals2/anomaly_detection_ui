@@ -62,7 +62,7 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
                 scale: scaleFactorForWidget,
                 child: CustomPaint(
 
-                  painter: new OpenPainter(this.map, mqttModel),
+                  painter: new OpenPainter(this.map, mqttModel,width, height),
                 ),
               ),
             )),
@@ -71,9 +71,11 @@ class _MapPaintingWidgetState extends State<MapPaintingWidget> {
   }
 }
 class OpenPainter extends CustomPainter{
-  OpenPainter(this.map, this.mqttModel);
+  OpenPainter(this.map, this.mqttModel, this.width, this.height);
   MapData map;
   MQTTModel mqttModel;
+  double width;
+  double height;
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint();
@@ -82,7 +84,7 @@ class OpenPainter extends CustomPainter{
     paint.style = PaintingStyle.stroke;
     paint.strokeWidth = 100;
     DrawingManager drawingManager = new DrawingManager(canvas);
-    drawingManager.drawFromMapData(this.map, mqttModel);
+    drawingManager.drawFromMapData(this.map, mqttModel, width, height);
   }
 
   @override
