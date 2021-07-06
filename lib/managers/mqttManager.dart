@@ -58,7 +58,7 @@ class MQTTManager {
       OhtDataModel mqtt = OhtDataModel.fromJson(jsonDecode(pt));
       if(!model.ohtDatas.keys.contains(mqtt.vehicle_id)) model.addOht(mqtt.vehicle_id);
       model.addToDatas(mqtt.vehicle_id ,mqtt);
-      //dataManager.startStoreData(mqtt, 1000000);
+      dataManager.startStoreData(mqtt, 2000);
       model.isinitiatedChange();
     });
 
